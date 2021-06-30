@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import React from 'react';
+import { Htag, Button } from '../components';
 import styles from '../styles/Home.module.css';
 
 export default function Home(): JSX.Element {
@@ -11,7 +13,8 @@ export default function Home(): JSX.Element {
       </Head>
 
       <main className={styles.main}>
-        Hello World
+        <Htag tag="h5">Full time</Htag>
+        <Button appearance="ghost" size="middle">View Resume</Button>
       </main>
     </div>
   );

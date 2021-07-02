@@ -7,13 +7,14 @@ class MyDocument extends Document {
 	}
 
 	render(): JSX.Element {
+		console.log('this.props', this.props);
 		return (
 			<Html lang="en">
 				<Head />
-				<body>
-					<Main />
-					<NextScript />
-				</body>
+					<body>
+						<Main />
+						<NextScript />
+					</body>
 			</Html>
 		);
 	}

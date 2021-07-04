@@ -4,7 +4,7 @@ import { Htag, Button } from '../components';
 import { withLayout } from '../layout/Layout';
 import styled from 'styled-components';
 
-import Welcome from '../scenes/Home/Welcome/Welcome';
+import { Welcome, AboutMe } from '../scenes/Home';
 
 function Home(): JSX.Element {
   return (
@@ -16,6 +16,7 @@ function Home(): JSX.Element {
       </Head>
       <main>
         <Welcome />
+        <AboutMe />
         {/* <Htag tag="h1">Full time</Htag> */}
         {/* <Button appearance="ghost" size="middle">View Resume</Button> */}
       </main>

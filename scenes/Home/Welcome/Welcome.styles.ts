@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  padding-top: 117px ;
+  padding-top: 117px;
+  padding-bottom: 85px;
 `;
 
 export const Container = styled.div`
@@ -9,7 +10,7 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
-export const Welcome = styled.div`
+export const WelcomeWrap = styled.div`
   max-width: 550px;
 `;
 

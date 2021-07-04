@@ -10,7 +10,7 @@ const defaultTheme = {
 		'20px',
 		'33px',
 		'100px',
-		'150px',
+		'121px',
 	],
 	fontWeight: {
 		body: 400,
@@ -23,7 +23,7 @@ const defaultTheme = {
 		body: 1.5,
 		heading: 1.4,
 		subHeading: 1,
-		code: 1.6
+		code: 1.6,
 	}
 };
 

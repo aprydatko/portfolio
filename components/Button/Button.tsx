@@ -1,19 +1,16 @@
 import { ButtonProps } from './Button.props';
-import cn from 'classnames';
-import styles from './Button.module.css';
+import { ButtonWrap } from './Button.styles';
 
-export const Button = ({ appearance, size, children }: ButtonProps): JSX.Element => {
+export const Button = ({ appearance, size, children, className }: ButtonProps): JSX.Element => {
 	return (
-		<button
-			className={cn(styles.button, {
-				[styles.primary]: appearance == 'primary',
-				[styles.ghost]: appearance == 'ghost',
-				[styles.large]: size == 'large',
-				[styles.middle]: size == 'middle',
-				[styles.small]: size == 'small',
-			})}
+		<ButtonWrap
+			className={`
+				${appearance === 'primary' ? 'primary' : 'ghost'}
+				${size === 'large' ? 'large' : size === 'middle' ? 'middle' : 'small'}
+				${className}
+			`}
 		>
 			{children}
-		</button>
+		</ButtonWrap>
 	);
 };

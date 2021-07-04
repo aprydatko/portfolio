@@ -3,12 +3,16 @@ import React from 'react';
 import { Container, Head } from './Header.styles';
 import Navigation from './Navigation/Navigation';
 
+import { Grid } from '../../styles';
+
 export const Header = ({ ...props }): JSX.Element => {
 	return (
 		<Head>
-			<Container>
-				<Navigation {...props} />
-			</Container>
+			<Grid>
+				<Container>
+					<Navigation {...props} />
+				</Container>
+			</Grid>
 		</Head>
 	);
 };

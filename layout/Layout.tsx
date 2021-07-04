@@ -25,8 +25,3 @@ export const withLayout = <T extends Record<string, unknown>>(Component: Functio
 		);
 	};
 };
-
-interface HomeProps {
-	theme: string;
-	toggleTheme: (theme: string) => string;
-}

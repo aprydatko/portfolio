@@ -1,10 +1,13 @@
 import Head from 'next/head';
 import React from 'react';
-import { Htag, Button } from '../components';
 import { withLayout } from '../layout/Layout';
+import { Welcome, AboutMe, MyResume } from '../scenes/Home';
+
 import styled from 'styled-components';
 
-import { Welcome, AboutMe } from '../scenes/Home';
+const Wrapper = styled.div`
+
+`;
 
 function Home(): JSX.Element {
   return (
@@ -14,12 +17,11 @@ function Home(): JSX.Element {
         <meta name="description" content="Portfolio by Artur Prydatko" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Wrapper>
         <Welcome />
         <AboutMe />
-        {/* <Htag tag="h1">Full time</Htag> */}
-        {/* <Button appearance="ghost" size="middle">View Resume</Button> */}
-      </main>
+        <MyResume />
+      </Wrapper>
     </div>
   );
 }

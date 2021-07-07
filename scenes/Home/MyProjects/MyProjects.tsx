@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Htag } from '../../../components';
+import { HeadlineDescription } from '../../../components/HeadlineDescription/HeadlineDescription';
 import { GridContent } from '../../../styles/Grid';
-import { ButtonWrap, Container, Description, DescriptionWrap, Position, Project, ProjectDescriptionWrap, ProjectImage, ProjectInfo, Projects, Year } from './MyProjects.styles';
+import { ButtonWrap, Container, Position, Project, ProjectDescriptionWrap, ProjectImage, ProjectInfo, Projects, Year } from './MyProjects.styles';
 
 const projects = [
 	{
@@ -30,17 +31,17 @@ const projects = [
 	}
 ];
 
+const description = [
+		'A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.',
+		'Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut'
+];
+
 export const MyProjects = (): JSX.Element => {
 	return (
 		<Container>
 			<GridContent>
 				<Htag tag="h2">My Projects</Htag>
-				<DescriptionWrap>
-					<Description>
-						<p>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</p>
-						<p>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut</p>
-					</Description>
-				</DescriptionWrap>
+				<HeadlineDescription className="my-projects" data={description} />
 				<Projects>
 					{projects.map(({ name, position, description }) => (
 						<Project>

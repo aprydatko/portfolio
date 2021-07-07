@@ -3,3 +3,5 @@ export * from './Button/Button';
 export * from './Providers/Providers';
 export * from './Social/Social';
 export * from './Skills/Skills';
+export * from './PricingTable/PricingTable';
+export * from './Testimonials/Testimonials';

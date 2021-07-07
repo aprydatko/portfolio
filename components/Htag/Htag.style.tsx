@@ -37,3 +37,15 @@ export const H3 = styled.h3`
 
 	color: ${props => props.theme.color.font.primary};
 `;
+
+export const H4 = styled.h4`
+    padding: 0;
+    margin: 0;
+    
+	font-size: ${({ theme }) => theme.fontSize[3]};
+    line-height: ${({ theme }) => theme.lineHeight.subHeading};
+    font-family: ${({ theme }) => theme.fontFamily.secondary};
+    font-weight: 300;
+
+	color: ${props => props.theme.color.font.primary};
+`;

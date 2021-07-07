@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import { withLayout } from '../layout/Layout';
-import { Welcome, AboutMe, MyResume } from '../scenes/Home';
+import { Welcome, AboutMe, MyResume, MyProjects } from '../scenes/Home';
 
 import styled from 'styled-components';
 
@@ -21,6 +21,7 @@ function Home(): JSX.Element {
         <Welcome />
         <AboutMe />
         <MyResume />
+        <MyProjects />
       </Wrapper>
     </div>
   );

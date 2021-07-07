@@ -138,6 +138,12 @@ export const GlobalStyles = createGlobalStyle`
 	padding: 0;	
  }
 
+ ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+ }
+
   body {
     font-family: ${({ theme }) => theme.fontFamily.primary};
 	font-size: ${({ theme }) => theme.fontSize[2]};

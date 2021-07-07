@@ -1,5 +1,5 @@
 import { HtagProps } from './Htag.props';
-import { H1, H2, H3 } from './Htag.style';
+import { H1, H2, H3, H4 } from './Htag.style';
 
 export const Htag = ({ tag, children }: HtagProps): JSX.Element => {
 	switch(tag) {
@@ -10,7 +10,7 @@ export const Htag = ({ tag, children }: HtagProps): JSX.Element => {
 		case 'h3': 
 			return <H3>{children}</H3>;
 		case 'h4': 
-			return <h4>{children}</h4>;
+			return <H4>{children}</H4>;
 		case 'h5': 
 			return <h5>{children}</h5>;
 		default:

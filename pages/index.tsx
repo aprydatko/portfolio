@@ -1,7 +1,17 @@
 import Head from 'next/head';
 import React from 'react';
 import { withLayout } from '../layout/Layout';
-import { Welcome, AboutMe, MyResume, MyProjects, Pricing } from '../scenes/Home';
+import { 
+  Welcome, 
+  AboutMe, 
+  MyResume, 
+  MyProjects, 
+  Pricing, 
+  MyBlog, 
+  MyClients,
+  Contact,
+  Map 
+} from '../scenes/Home';
 
 import styled from 'styled-components';
 
@@ -23,6 +33,10 @@ function Home(): JSX.Element {
         <MyResume />
         <MyProjects />
         <Pricing />
+        <MyBlog />
+        <MyClients />
+        <Contact />
+        <Map />
       </Wrapper>
     </div>
   );

@@ -5,9 +5,9 @@ export const Button = ({ appearance, size, children, className }: ButtonProps): 
 	return (
 		<ButtonWrap
 			className={`
-				${appearance === 'primary' ? 'primary' : 'ghost'}
+				${appearance === 'primary' ? 'primary' : appearance === 'ghost' ? 'ghost' : 'nostroke'}
 				${size === 'large' ? 'large' : size === 'middle' ? 'middle' : 'small'}
-				${className}
+				${className ? className : ''}
 			`}
 		>
 			{children}

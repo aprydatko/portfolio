@@ -36,11 +36,26 @@ export const ButtonWrap = styled.button`
         background-color: ${({ theme }) => theme.color.main.orange};
     }
 
+    &.nostroke {
+        color: ${({ theme }) => theme.color.main.orange};
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+
+    &.nostroke:hover {
+        color: ${({ theme }) => theme.color.main.white};
+        background-color: ${({ theme }) => theme.color.main.orange};
+    }
+
     &.large {
         width: 269px;
     }
 
     &.middle {
         width: 219px;
-}
+    }
+
+    &.small {
+        width: 120px;
+    }
 `;

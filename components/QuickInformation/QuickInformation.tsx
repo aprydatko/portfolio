@@ -1,7 +1,6 @@
 import React from 'react';
 import { QuickInformationProps } from './QuickInformation.props';
-import { GraphicContainer, Container, Content, Header, ItemInformation } from './QuickInformation.styles';
-import GraphicIcon from '../../../../assets/graphic.svg';
+import { Container, Content, Header, ItemInformation } from './QuickInformation.styles';
 
 export const QuickInformation = ({ data, className }: QuickInformationProps): JSX.Element => {
 	return (

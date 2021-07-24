@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Htag } from '../../../components';
 import { HeadlineDescription } from '../../../components/HeadlineDescription/HeadlineDescription';
 import { GridContent } from '../../../styles/Grid';
-import { Container, Articles, Article, DateContainer, TimeRead, Date, ContentContainer, Title, Content, ArticlesWrap, ArticleContentWrap } from './MyBlog.styles';
+import { Container, Articles, Article, DateContainer, TimeRead, Date, ContentContainer, Content, ArticleContentWrap } from './MyBlog.styles';
 
 const description = [
 		'Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.',

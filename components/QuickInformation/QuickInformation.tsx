@@ -3,13 +3,10 @@ import { QuickInformationProps } from './QuickInformation.props';
 import { GraphicContainer, Container, Content, Header, ItemInformation } from './QuickInformation.styles';
 import GraphicIcon from '../../../../assets/graphic.svg';
 
-export const QuickInformation = ({ data }: QuickInformationProps): JSX.Element => {
+export const QuickInformation = ({ data, className }: QuickInformationProps): JSX.Element => {
 	return (
 		<>
-			<GraphicContainer>
-				<GraphicIcon className="graphic-icon" />
-			</GraphicContainer>
-			<Container>
+			<Container className={className}>
 				{data && data.map(it => 
 					<ItemInformation key={it.id}>
 						<Header>{it.headline}</Header>

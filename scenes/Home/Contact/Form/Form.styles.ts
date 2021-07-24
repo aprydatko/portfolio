@@ -34,6 +34,11 @@ export const Textarea = styled.textarea`
 	padding-bottom: 29px;
 	border-radius: 5px;
 	border: 1px solid ${({ theme }) => theme.color.main.black};
+	background: ${({ theme }) => theme.color.body.secondary};
+
+	@media screen and (max-width: 960px) {
+		max-width: 100%;
+	}
 `;
 
 export const Input = styled.input`
@@ -47,4 +52,9 @@ export const Input = styled.input`
 	padding: 15px 30px;
 	border-radius: 5px;
 	border: 1px solid ${({ theme }) => theme.color.main.black};
+	background: ${({ theme }) => theme.color.body.secondary};
+
+	@media screen and (max-width: 960px) {
+		max-width: 100%;
+	}
 `;

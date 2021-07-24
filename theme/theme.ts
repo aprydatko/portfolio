@@ -47,7 +47,7 @@ const light = {
 			primary: '#1c2528',
 			secondary: '#ff8059',
 			tertiary: '#3c4649',
-		}
+		},
 	}
 };
 

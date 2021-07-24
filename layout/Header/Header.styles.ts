@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const Head = styled.header`
-	margin-top: 90px;
+	margin-top: 60px;
 	background: ${({ theme }) => theme.color.body.primary};
+
+	@media only screen and (max-width: 1200px) {
+		margin-top: 19px;
+		padding-bottom: 19px;
+	}
 `;
 
 export const Container = styled.div`

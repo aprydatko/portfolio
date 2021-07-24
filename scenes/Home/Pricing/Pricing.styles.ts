@@ -20,5 +20,14 @@ export const Container = styled.div`
 
 	.prising-testimonials {
 		margin-top: 160px;
+		
+		@media screen and (max-width: 960px) {
+			margin-top: 60px;
+		}
+	}
+
+	@media screen and (max-width: 960px) {
+		padding-bottom: 200px;
+		background-image: none;
 	}
 `;

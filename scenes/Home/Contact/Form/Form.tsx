@@ -16,7 +16,7 @@ export const FormBlock = (): JSX.Element => {
 				</InputWrap>
 				<InputWrap>
 					<Label htmlFor="name">Message</Label>
-					<Textarea name="name" id="name" rows={6} cols={50}></Textarea>
+					<Textarea name="name" id="name" rows={6} cols={50} placeholder="Enter your email address"></Textarea>
 				</InputWrap>
 				<Button appearance="primary" size="middle">Send Message</Button>
 			</Form>

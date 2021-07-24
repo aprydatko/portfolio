@@ -12,18 +12,13 @@ export const Successful = (): JSX.Element => {
 			<List>
 				<Item>
 					<Backpack />
-					<Count>124</Count>
+					<Count>12</Count>
 					<Text>Successful Project</Text>
 				</Item>
 				<Item>
 					<Smile />
-					<Count>65</Count>
+					<Count>6</Count>
 					<Text>Happy Clients</Text>
-				</Item>
-				<Item>
-					<Cup />
-					<Count>18</Count>
-					<Text>Awards Won</Text>
 				</Item>
 			</List>
 		</Container>

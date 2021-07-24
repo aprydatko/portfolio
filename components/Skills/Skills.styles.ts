@@ -14,6 +14,9 @@ export const SkillContainer = styled.div`
 export const SkillWrapper = styled.div`
 	display: flex;
 	// justify-content: space-between;
+	@media only screen and (max-width: 960px) {
+		justify-content: flex-start;
+	}
 `;
 
 export const SkillNameWrapper = styled.div`
@@ -24,6 +27,10 @@ export const SkillListWrapper = styled.div`
 	position: relative;
 	top: 4px;
 	margin-right: 100px;
+
+	@media only screen and (max-width: 960px) {
+		margin-right: 16px;
+	}
 `;
 
 export const SkillPercentWrapper = styled.div`
@@ -60,11 +67,12 @@ export const Badge = styled.div<SkillCircleProps>`
 	border-radius: 10px;
 	background-color: ${
 		({ theme, name }) => 
-			name === 'Photoshop' ? theme.color.main.blue :
-			name === 'Ilustrator' ? theme.color.main.orange :
-			name === 'HTML' ? theme.color.main.sky :
-			name === 'CSS' ? theme.color.main.violet :
-			name === 'JQuery' ? theme.color.main.bronze : ''  
+			name === 'HTML' ? theme.color.main.blue :
+			name === 'CSS' ? theme.color.main.orange :
+			name === 'JavaScript' ? theme.color.main.sky :
+			name === 'React/Redux' ? theme.color.main.violet :
+			name === 'Typescript' ? theme.color.main.bronze :   
+			name === 'Node/PHP' ? theme.color.main.black : ''  
 		
 	};
 `;
@@ -84,11 +92,12 @@ export const SkillCircle = styled.div<SkillCircleProps>`
 	&.active {
 		background-color: ${
 			({ theme, name }) => 
-				name === 'Photoshop' ? theme.color.main.blue :
-				name === 'Ilustrator' ? theme.color.main.orange :
-				name === 'HTML' ? theme.color.main.sky :
-				name === 'CSS' ? theme.color.main.violet :
-				name === 'JQuery' ? theme.color.main.bronze : ''  
+				name === 'HTML' ? theme.color.main.blue :
+				name === 'CSS' ? theme.color.main.orange :
+				name === 'JavaScript' ? theme.color.main.sky :
+				name === 'React/Redux' ? theme.color.main.violet :
+				name === 'Typescript' ? theme.color.main.bronze :   
+				name === 'Node/PHP' ? theme.color.main.black : ''   
 			
 		};
 	}

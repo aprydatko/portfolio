@@ -2,7 +2,7 @@ import React from 'react';
 import { Social } from '../../components';
 import { FooterProps } from './Footer.props';
 import { GridContent } from '../../styles/index';
-import { Container, FooterWrap } from './Footer.styles';
+import { Container, FooterWrap, Info, Desinged } from './Footer.styles';
 
 export const Footer = ({ ...props }: FooterProps): JSX.Element => {
 	const d = new Date();
@@ -19,8 +19,8 @@ export const Footer = ({ ...props }: FooterProps): JSX.Element => {
 			<GridContent>
 				<FooterWrap>
 					<Social className="social" icons={['linkendin', 'gmail', 'github']} />
-					<div>© {getDate(year)} RobertLong.com, All Rights Reserved</div>
-					<div>Designed by WebDuck</div>
+					<Info>© {getDate(year)} RobertLong.com, All Rights Reserved</Info>
+					<Desinged>Designed by WebDuck</Desinged>
 				</FooterWrap>
 			</GridContent>
 		</Container>

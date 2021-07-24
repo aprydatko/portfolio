@@ -9,81 +9,69 @@ import { WorkHistory } from '../WorkHistory/WorkHistory';
 const skills = [
 	{
 		id: 0,
-		name: 'Photoshop',
+		name: 'HTML',
 		percent: 9
 	},
 	{
 		id: 1,
-		name: 'Ilustrator',
+		name: 'CSS',
 		percent: 8
 	},
 	{
 		id: 2,
-		name: 'HTML',
+		name: 'JavaScript',
 		percent: 7
 	},
 	{
 		id: 3,
-		name: 'CSS',
-		percent: 4
+		name: 'React/Redux',
+		percent: 7
 	},
 	{
 		id: 4,
-		name: 'JQuery',
-		percent: 3
-	}
+		name: 'Typescript',
+		percent: 5
+	},
+	{
+		id: 5,
+		name: 'Node/PHP',
+		percent: 4
+	},
 ];
 
 const history = {
 	education: [
 		{
-			date: '2010 - 2012',
-			position: 'Master in Graphic',
-			place: 'New York University'
+			date: '2008 - 2013',
+			position: 'Master in Engineer',
+			place: 'Sumy State University'
 		},
-		{
-			date: '2006 - 2009',
-			position: 'Bachelors of FineArt',
-			place: 'New York University'
-		}
 	],
 	expertise: [
-		'Logo Designing',
-		'Website Designing',
-		'Branding',
+		'App Development',
 		'Website Development',
-		'Character Designing'
+		'CRM/ADMIN pannels',
+		'SEO',
 	],
 	awards: [
 		{
-			date: '2015',
-			place: 'Art of the Week',
-			description: 'Euismod vel bibendum ultrices, fringilla vel eros. Donec euism'
+			date: '2021',
+			place: 'Home',
+			description: 'I create interesting pet projects'
 		},
-		{
-			date: '2014',
-			place: 'Best Desinger',
-			description: 'Euismod vel bibendum ultrices, fringilla vel eros. Donec euism'
-		}
 	],
 	expirience: [
 		{
-			date: '2014 - Present',
-			name: 'Soft Tech Inc',
-			position: 'UI Head & Manager',
-			description: 'Euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed.'
+			date: '2020 - now',
+			name: 'Ithinkers',
+			position: 'Front/Web Developer',
+			description: 'I am developing an e-app admin panel for catering establishments. I create and improve online stores for popular chains of pizzerias, rolls, and more. I make applications for the delivery of goods.'
 		},
 		{
-			date: '2010 - 2014',
-			name: 'Kana Design Studio',
-			position: 'UI / UX Specialist',
-			description: 'Euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed.'
-		},
-		{
-			date: '2009 - 2010',
-			name: 'Paperart',
-			position: 'Graphic Designer',
-			description: 'Euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed.'
+			date: '2019 - 2020',
+			name: 'ZenBit Tech',
+			position: 'Front-end Developer',
+			description: 'I was engaged in adding new functionality for the application for the delivery of orders, implementing new features.'
 		}
 	]
 };
@@ -96,11 +84,11 @@ export const MyResumeBlock = (): JSX.Element => {
 				<Successful />
 				<Wrapper>
 					<MessageBlock>
-						<p>Talented UX designer with 7+ years of experience, seeking to elevate UI/UX at ABC, Inc. As Lead UI/UX Head completed project before dead line. ittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euism od leo um, at pellentesque velituis a congue sem. </p>
+						<p>I am developing an e-app admin panel for catering establishments. I create and improve online stores for popular chains of pizzerias, rolls, and more. I make applications for the delivery of goods.</p>
 					</MessageBlock>
 					<Skills data={skills} />
 					<WorkHistory data={history} />
-					<Button className="button-resume" appearance="primary">Download Resume</Button>
+					<Button className="button-resume" appearance="primary" size="middle">Download Resume</Button>
 				</Wrapper>
 			</Container>
 		</AboutMeBlockSection>

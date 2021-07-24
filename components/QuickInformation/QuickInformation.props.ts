@@ -6,4 +6,5 @@ interface QuickInformation {
 
 export interface QuickInformationProps {
 	data: QuickInformation[];
+	className?: string;
 }

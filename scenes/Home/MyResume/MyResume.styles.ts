@@ -13,7 +13,7 @@ export const MyResumeSection = styled.div`
     left: 45px;
     width: 200px;
     height: 200px;
-    background-image: url(/resume-effect-two.svg);
+    // background-image: url(/resume-effect-two.svg);
     background-size: inherit;
     background-repeat: no-repeat;
   }
@@ -25,10 +25,15 @@ export const MyResumeSection = styled.div`
     right: -45px;
     width: 200px;
     height: 200px;
-    background-image: url(/resume-effect-one.svg);
+    // background-image: url(/resume-effect-one.svg);
     background-size: inherit;
     background-repeat: no-repeat;
   }
+
+  @media only screen and (max-width: 1200px) {
+		padding-top: 60px;
+    padding-bottom: 100px;
+	}
 `;
 
 export const Container = styled.div`

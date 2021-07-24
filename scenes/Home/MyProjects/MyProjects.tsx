@@ -17,18 +17,6 @@ const projects = [
 		description: 'Development Branding',
 		year: '2021'
 	},
-	{
-		name: 'Gooir',
-		position: 'UI UX Design',
-		description: 'UI UX Design',
-		year: '2018'
-	},
-	{
-		name: 'Mozar',
-		position: 'UI UX Design',
-		description: 'Development Branding',
-		year: '2016'
-	}
 ];
 
 const description = [
@@ -43,8 +31,8 @@ export const MyProjects = (): JSX.Element => {
 				<Htag tag="h2">My Projects</Htag>
 				<HeadlineDescription className="my-projects" data={description} />
 				<Projects>
-					{projects.map(({ name, position, description }) => (
-						<Project>
+					{projects.map(({ name, position, description }, index) => (
+						<Project key={index}>
 							<div>
 								<ProjectImage></ProjectImage>
 								<Year>2021</Year>
@@ -60,7 +48,7 @@ export const MyProjects = (): JSX.Element => {
 					))}
 				</Projects>
 				<ButtonWrap>
-					<Button className="button-load" appearance="ghost">Load more</Button>
+					<Button className="button-load" appearance="ghost" size="middle">Load more</Button>
 				</ButtonWrap>
 			</GridContent>
 		</Container>

@@ -10,6 +10,15 @@ export const Container = styled.div`
 
 	display: flex;
 	justify-content: flex-end;
+
+	@media only screen and (max-width: 1200px) {
+		justify-content: flex-start;
+	}
+
+	@media only screen and (max-width: 960px) {
+		margin-top: 0px;
+		flex-direction: column;
+	}
 `;
 
 export const Wrapper = styled.div`
@@ -39,6 +48,14 @@ export const Wrapper = styled.div`
 		width: 1px;
 		height: 100%;
 		background-color: ${({ theme }) => theme.color.font.primary};
+		@media only screen and (max-width: 960px) {
+			content: none;
+		}
+	}
+
+	@media only screen and (max-width: 960px) {
+		max-width: 100%;
+		padding: 0;
 	}
 `;
 

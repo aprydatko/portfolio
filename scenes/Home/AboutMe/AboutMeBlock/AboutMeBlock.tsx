@@ -4,7 +4,7 @@ import { AboutMeBlockSection, Container, MessageBlock, Wrapper } from './AboutMe
 
 import { Successful } from '../Successful/Successful';
 import { Button } from '../../../../components';
-import Signature from '../../../../assets/icons/signature.svg';
+// import Signature from '../../../../assets/icons/signature.svg';
 
 export const AboutMeBlock = (): JSX.Element => {
 	return (
@@ -14,12 +14,12 @@ export const AboutMeBlock = (): JSX.Element => {
 				<Successful />
 				<Wrapper>
 					<MessageBlock>
-						<p>My name is Robert Long. I have been studying UI UX Design since October 2020. I like creating a cool design project.</p>
-						<p>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem. </p>
-						<p>In sed dolor ut ligula malesuada sollicitudin. Morbi iaculis convallis arcu, nec maximus tellus sodales in. Curabitur blandit enim at nisl lobortis, non pretium enim hendrer</p>
+						<p>My name is Artur Prydatko. I have been studying Front-end since September  2019. I like creating a cool project.</p>
+						<p>The main direction is the development of online stores from scratch, delivery applications, CRM panels for accounting and editing of product items. </p>
+						<p>Most of the work I make front-end, but I also make a little back-end for processing requests, working with services.</p>
 					</MessageBlock>
-					<Button className="button-resume" appearance="ghost">View Resume</Button>
-					<Signature className="signature-icon" />
+					<Button className="button-resume" appearance="ghost" size="middle">View Resume</Button>
+					{/* <Signature className="signature-icon" /> */}
 				</Wrapper>
 			</Container>
 		</AboutMeBlockSection>

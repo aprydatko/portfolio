@@ -14,14 +14,21 @@ export const Container = styled.div`
 		right: -360px;
 		width: 200px;
 		height: 200px;
-		background-image: url(/resume-effect-three.svg);
+		// background-image: url(/resume-effect-three.svg);
 		background-size: inherit;
 		background-repeat: no-repeat;
-  }
+  	}
+
+	@media only screen and (max-width: 960px) {
+		justify-content: flex-start;
+	}
 `;
 
 export const Column = styled.div`
 	width: 225px;
+	@media only screen and (max-width: 960px) {
+		margin-right: 100px;
+	}
 `;
 
 export const EducationContainer = styled.div`

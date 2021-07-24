@@ -20,7 +20,7 @@ export const InfoBlock = (): JSX.Element => {
 				</Item>
 				<Item>
 					<Map />
-					<Text>43rd Street <br /> River Point <br /> NY 1023</Text>
+					<Text>43rd Street  River Point <br /> NY 1023</Text>
 				</Item>
 			</List>
 		</Container>

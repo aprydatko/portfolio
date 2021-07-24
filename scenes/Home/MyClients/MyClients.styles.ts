@@ -21,6 +21,11 @@ export const Container = styled.div`
 	.prising-testimonials {
 		margin-top: 160px;
 	}
+
+	@media screen and (max-width: 960px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 `;
 
 export const Clients = styled.div`

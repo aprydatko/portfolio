@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const AboutMeBlockSection = styled.div`
 	padding-top: 90px;
+
+	@media screen and (max-width: 960px) {
+		padding-top: 60px;
+	}
 `;
 
 export const Container = styled.div`
@@ -9,7 +13,10 @@ export const Container = styled.div`
 	// padding-top: 60px;
 
 	display: flex;
-	// justify-content: flex-end;
+
+	@media screen and (max-width: 960px) {
+		flex-direction: column;
+	}
 `;
 
 export const Wrapper = styled.div`
@@ -39,6 +46,16 @@ export const Wrapper = styled.div`
 		width: 1px;
 		height: 72%;
 		background-color: ${({ theme }) => theme.color.font.primary};
+
+		@media screen and (max-width: 960px) {
+			content: none;
+		}
+	}
+
+	@media screen and (max-width: 960px) {
+		max-width: 100%;
+		padding: 0;
+		padding-top: 30px;
 	}
 `;
 

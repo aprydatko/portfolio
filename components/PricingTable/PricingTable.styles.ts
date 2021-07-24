@@ -5,6 +5,13 @@ export const TableWrap = styled.div`
 
 	display: flex;
 	justify-content: space-between;
+
+	@media screen and (max-width: 960px) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 60px;
+	}
 `;
 
 export const TableItem = styled.div`
@@ -20,6 +27,16 @@ export const TableItem = styled.div`
 	& .button-full-time {
 		width: 175px;
     	margin-top: 41px;
+	}
+
+	@media screen and (max-width: 960px) {
+		margin-bottom: 32px;
+		max-width: 320px;
+		width: 100%;
+		
+		&:last-child {
+			margin-bottom: 0px;
+		}
 	}
 `;
 

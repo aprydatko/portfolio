@@ -11,6 +11,13 @@ export const H1 = styled.h1`
     font-weight: ${({ theme }) => theme.fontWeight.subHeading};
 
 	color: ${props => props.theme.color.font.primary};
+
+    @media only screen and (max-width: 650px) {
+        font-size: 60px;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: ${({ theme }) => theme.fontSize[2]};
+    }
 `;
 
 export const H2 = styled.h2`
@@ -23,6 +30,13 @@ export const H2 = styled.h2`
     font-weight: ${({ theme }) => theme.fontWeight.subHeading};
 
 	color: ${props => props.theme.color.font.primary};
+
+    @media only screen and (max-width: 650px) {
+        font-size: 60px;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: ${({ theme }) => theme.fontSize[2]};
+    }
 `;
 
 export const H3 = styled.h3`

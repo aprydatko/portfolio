@@ -4,7 +4,6 @@ export const ButtonWrap = styled.button`
     display: inline-block;
 
     box-sizing: border-box;
-    width: 212px;
     height: 48px;
 
     font-family: ${({ theme }) => theme.fontFamily.primary};
@@ -52,7 +51,7 @@ export const ButtonWrap = styled.button`
     }
 
     &.middle {
-        width: 219px;
+        width: 212px;
     }
 
     &.small {

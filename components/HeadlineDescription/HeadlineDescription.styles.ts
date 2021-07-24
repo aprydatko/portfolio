@@ -14,6 +14,21 @@ export const Description = styled.div`
 	padding-left: 55px;
 	max-width: 620px;
 
+	@media screen and (max-width: 960px) {
+		padding-top: 24px;
+		padding-bottom: 8px;
+		max-width: 100%;
+		margin-left: 170px;
+	}
+
+	& > div:first-child > p {
+		margin-top: 0px; 
+		font-weight: 400; 
+	}
+
+	& > div:last-child > p {
+		margin-bottom: 0px; 
+	}
 
 	& p {
 		margin: 22px 0;
@@ -30,4 +45,5 @@ export const Description = styled.div`
 		width: 1px;
 		height: 100%;
 		background-color: ${({ theme }) => theme.color.font.primary};
+	}
 `;

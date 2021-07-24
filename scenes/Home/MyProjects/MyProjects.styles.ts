@@ -8,9 +8,14 @@ export const Container = styled.div`
 	background-size: inherit;
 	background-repeat: no-repeat;
 	background-position: 0 100%;
+	
+	@media screen and (max-width: 960px) {
+		background-image: none;
+		padding-bottom: 100px;
+	}
 
 	& .my-projects > div {
-		margin-top: 90px;
+		margin-top: 75px;
 	}
 
 	& h2 {
@@ -30,22 +35,38 @@ export const ButtonWrap = styled.div`
 
 export const Projects = styled.ul`
 	margin-top: 60px;
+	
 `;
 
 export const Project = styled.li`
 	display: flex;		
 	margin-bottom: 118px;
+
+	@media only screen and (max-width: 960px) {
+		flex-direction: column;
+  	}
 `;
 
 export const ProjectDescriptionWrap = styled.div`
 	padding-top: 84px;
     padding-left: 100px;
+
+	@media only screen and (max-width: 960px) {
+		padding-left: 0;
+		width: 200px;
+    	margin: 0 auto;
+  	}
 `;
 
 export const ProjectImage = styled.div`
 	width: 540px;
 	height: 352px;
 	background-color: #ded6cb;
+
+	@media only screen and (max-width: 960px) {
+		width: 100%;
+		height: 450px;
+  	}
 `;
 
 export const Year = styled.div`

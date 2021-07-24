@@ -24,13 +24,11 @@ export const Button = styled.button<Props>`
 	}
 
 	svg > path {
-		stroke: ${({ theme }) => theme.color.main.black};
-		fill: ${({ theme }) => theme.color.main.black};
+		fill: ${({ theme }) => theme.color.font.primary};
 	}
 
 	&:hover {
 		svg > path {
-			stroke: ${({ theme }) => theme.color.font.secondary};
 			fill: ${({ theme }) => theme.color.font.secondary};
 		}
 	}

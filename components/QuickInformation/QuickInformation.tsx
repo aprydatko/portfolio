@@ -1,15 +1,22 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import { QuickInformationProps } from './QuickInformation.props';
 import { Container, Content, Header, ItemInformation } from './QuickInformation.styles';
 
-export const QuickInformation = ({ data, className }: QuickInformationProps): JSX.Element => {
+
+export const QuickInformation = ({ section, subsection, count, className }: QuickInformationProps): JSX.Element => {
+	const { t, lang } = useTranslation();
+	const array = [];
+	for (let i = 0; i < count; i++) {
+		array.push(i);
+	}
 	return (
 		<>
 			<Container className={className}>
-				{data && data.map(it => 
-					<ItemInformation key={it.id}>
-						<Header>{it.headline}</Header>
-						<Content>{it.text}</Content>
+				{array.map((count) => 
+					<ItemInformation key={count}>
+						<Header>{t(`home:${section}.${subsection}.${count}.headline`)}</Header>
+						<Content>{t(`home:${section}.${subsection}.${count}.text`)}</Content>
 					</ItemInformation>
 					)}
 			</Container>

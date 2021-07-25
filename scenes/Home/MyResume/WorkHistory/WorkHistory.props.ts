@@ -1,12 +1,11 @@
 export interface ExpertiseProps {
-	expertiseName: string;
+	index: number;
+	t: (string: string) => string;
 }
 
 export interface ExperienceProps {
-	date: string;
-	name: string;
-	position: string;
-	description: string;
+	index: number;
+	t: (string: string) => string;
 }
 
 export interface AwardsProps {
@@ -16,9 +15,7 @@ export interface AwardsProps {
 }
 
 export interface EducationProps {
-	date: string;
-	position: string;
-	place: string;
+	t: (string: string) => string;
 }
 
 export interface WorkHistory {
@@ -29,5 +26,5 @@ export interface WorkHistory {
 }
 
 export interface WorkHistoryProps {
-	data: WorkHistory;
+	data?: WorkHistory;
 }

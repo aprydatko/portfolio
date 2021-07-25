@@ -10,15 +10,15 @@ export const Social = ({ icons, icon, className }: SocialProps): JSX.Element => 
 	const getIcon = (icon: string): JSX.Element => {
 		switch(icon) {
 			case 'linkendin':
-				return <Link className={className} href={'https://www.linkedin.com/in/aprydatko'} target="_blank">
+				return <Link className={className} href={'https://www.linkedin.com/in/aprydatko'} target="_blank" title="LinkedIn">
 					<LinkendinIcon className="linkendin" />
 				</Link>;
 			case 'gmail':
-				return <Link className={className} href={'mailto:artyrpridatko@gmail.com'}>
+				return <Link className={className} href={'mailto:artyrpridatko@gmail.com'} title="Gmail">
 					<GmailIcon className="gmail" />
 				</Link>;
 			default:
-				return <Link className={className} href={'https://www.linkedin.com/in/aprydatko'} target="_blank">
+				return <Link className={className} href={'https://github.com/aprydatko'} target="_blank" title="GitHub">
 					<GitHubIcon className="github" />
 				</Link>;
 		}

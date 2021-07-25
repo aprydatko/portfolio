@@ -31,6 +31,7 @@ export const WelcomeSubtitle = styled.span`
   font-family: ${({ theme }) => theme.fontFamily.primary};
   font-weight: 300;
   line-height: 1;
+  text-transform: uppercase;
 
   color: ${({ theme }) => theme.color.font.primary};
 

@@ -1,0 +1,67 @@
+{
+	"welcome": {
+		"title": "Artyr Prydatko",
+		"subtitle": "Front-end developer",
+		"description": "I'm a Front-End Developer based in Sumy. I love travelling, photography & music.",
+		"quickInformation": {
+			"0": {
+				"headline": "Born in",
+				"text": "Sumy"
+			},
+			"1": {
+				"headline": "Expirience",
+				"text": "2+ Years"
+			},
+			"2": {
+				"headline": "Date of Birth",
+				"text": "15 November 1990"
+			}
+		}
+	},
+	"about":{
+		"title": "About Me",
+		"description": "<0>My name is Artur Prydatko. I have been studying Front-end since September 2019. I like creating a cool project</0><0>The main direction is the development of online stores from scratch, delivery applications, CRM panels for accounting and editing of product items.</0><0>Most of the work I make front-end, but I also make a little back-end for processing requests, working with services.</0>",
+		"button": "View Resume",
+		"successProject": "Successful Project",
+		"happyClients": "Happy Clients"
+	},
+	"resume": {
+		"title": "My Resume",
+		"resume": "<0>I am developing an e-app admin panel for catering establishments. I create and improve online stores for popular chains of pizzerias, rolls, and more. I make applications for the delivery of goods.</0>",
+		"button": "Download Resume",
+		"skills": {
+			"title": "skills",
+			"music": "Music",
+			"travel": "Travel",
+			"photo": "Photo"
+		},
+		"education": {
+			"title": "education",
+			"date": "2008 - 2013",
+			"rank": "Master in Engineer",
+			"university": "Sumy State University"
+		},
+		"expertise": {
+			"title": "expertise",
+			"0": "App Development",
+			"1": "Website Development",
+			"2": "CRM/ADMIN pannels",
+			"3": "SEO"
+		},
+		"experience": {
+			"title": "experience",
+			"0": {
+				"date": "2020 - new",
+				"company": "Ithinkers",
+				"position": "Front/Web Developer",
+				"description": "I am developing an e-app admin panel for catering establishments. I create and improve online stores for popular chains of pizzerias, rolls, and more. I make applications for the delivery of goods."
+			},
+			"1": {
+				"date": "2019 - 2020",
+				"company": "ZenBit Tech",
+				"position": "Front-end Developer",
+				"description": "I was engaged in adding new functionality for the application for the delivery of orders, implementing new features."
+			}
+		}
+	}
+}

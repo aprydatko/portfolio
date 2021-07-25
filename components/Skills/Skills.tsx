@@ -1,5 +1,6 @@
 import React from 'react';
 import { Htag } from '../Htag/Htag';
+import useTranslation from 'next-translate/useTranslation';
 import { SkillsProps, PercentLineProps } from './Skills.props';
 import { SkillLine, SkillCircle, SkillContainer, SkillsList, SkillName, SkillPercent, Badge, SkillWrapper, SkillNameWrapper, SkillListWrapper, SkillPercentWrapper } from './Skills.styles';
 
@@ -28,9 +29,10 @@ const getPercentLine = ({ percent, name }: PercentLineProps): JSX.Element => {
 };
 
 export const Skills = ({ data }: SkillsProps): JSX.Element => {
+	const { t, lang } = useTranslation();
 	return (
 		<SkillContainer>
-			<Htag tag="h3">SKILLS</Htag>
+			<Htag tag="h3">{t('home:resume.skills.title')}</Htag>
 			<SkillWrapper>
 				<SkillNameWrapper>
 					{data && data.map(({ id, name }) => 

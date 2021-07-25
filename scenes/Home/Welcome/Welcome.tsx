@@ -1,43 +1,31 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import { Htag } from '../../../components/Htag/Htag';
 import { Social } from '../../../components';
 import { QuickInformation  } from '../../../components/QuickInformation/QuickInformation';
 import { Header, Container, WelcomeWrap, WelcomeSubtitle, WelcomeInfo, WelcomeDescription } from './Welcome.styles';
 import { Grid } from '../../../styles';
-import GraphicMobile from '../../../assets/graphic-mobile.svg';
-
-const data = [
-	{
-		id: 0,
-		headline: 'Born in',
-		text: 'Sumy'
-	},
-	{
-		id: 1,
-		headline: 'Expirience',
-		text: '2+ Years'
-	},
-	{
-		id: 2,
-		headline: 'Date of Birth',
-		text: '15 November 1990'
-	}
-];
 
 export const Welcome = (): JSX.Element => {
+	const { t, lang } = useTranslation();
 	return (
 		<Header>
       <Grid>
         {/* <GraphicMobile className="graphic-mobile" /> */}
         <Container>
           <WelcomeWrap>
-            <WelcomeSubtitle>FRONT-END DEVELOPER</WelcomeSubtitle>
-            <Htag tag="h1">ARTYR PRYDATKO</Htag>
+            <WelcomeSubtitle>{t('home:welcome.subtitle')}</WelcomeSubtitle>
+			<Htag tag="h1">{t('home:welcome.title')}</Htag>
           </WelcomeWrap>
           <WelcomeInfo>
-            <WelcomeDescription>I'm a Front-End Developer based in Sumy. I love travelling, photography & music.</WelcomeDescription>
+            <WelcomeDescription>{t('home:welcome.description')}</WelcomeDescription>
             <Social className="social" icons={['linkendin', 'gmail', 'github']} />
-            <QuickInformation className="quick-information" data={data} />
+            <QuickInformation 
+              className="quick-information"
+              section="welcome"
+              subsection="quickInformation"
+              count={3} 
+            />
           </WelcomeInfo>
         </Container>
       </Grid>

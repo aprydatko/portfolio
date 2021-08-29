@@ -59,9 +59,35 @@ export const ProjectDescriptionWrap = styled.div`
 `;
 
 export const ProjectImage = styled.div`
+	position: relative;
 	width: 540px;
 	height: 352px;
 	background-color: #ded6cb;
+	overflow: hidden;
+	cursor: pointer;
+
+	&:hover {
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(/icons/search.svg);
+			background-repeat: no-repeat;
+			background-position: 94% 8%;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0, .2);
+		}
+	}
 
 	@media only screen and (max-width: 960px) {
 		width: 100%;
@@ -91,5 +117,40 @@ export const ProjectInfo = styled.div`
 		max-width: 200px;
 		margin-top: 5px;
 		line-height: 1.7;
+	}
+`;
+
+export const FullImgWrap = styled.div`
+	box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+	background: rgba(0,0,0, .15);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999
+`;
+
+export const FullImg = styled.div`
+	margin: 16px 16px 100px 16px;
+	position: fixed;
+	top: 30px;
+	left: calc(50% - 500px);
+	width: 1000px;
+	height: 650px;
+	z-index: 9999;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	& .close {
+		position: absolute;
+		top: 0;
+		right: -30px;
+		cursor: pointer;
+
+		&:hover {
+			fill: ${({ theme }) => theme.color.font.secondary};	
+		}
 	}
 `;

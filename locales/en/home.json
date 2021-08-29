@@ -74,14 +74,16 @@
 				"position": "UI UX Design",
 				"description": "Interaction Design Branding",
 				"year": "2021",
-				"imgUrl": "/"
+				"imgUrl": "/projects/zorro/zorro.jpg",
+				"originalImgUrl": "/projects/zorro/zorro-origin.jpg"
 			},
 			"1": {
 				"title": "Kana",
 				"position": "UI UX Design",
 				"description": "Development Branding",
 				"year": "2021",
-				"imgUrl": "/"
+				"imgUrl": "/projects/kana/kana.jpg",
+				"originalImgUrl": "/projects/kana/kana-origin.jpg"
 			}
 		}
 	},

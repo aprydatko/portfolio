@@ -63,5 +63,135 @@
 				"description": "I was engaged in adding new functionality for the application for the delivery of orders, implementing new features."
 			}
 		}
+	},
+	"projects": {
+		"title": "My Projects",
+		"description": "<0>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut.</0>",
+		"button": "Load more",
+		"items": {
+			"0": {
+				"title": "Zorro",
+				"position": "UI UX Design",
+				"description": "Interaction Design Branding",
+				"year": "2021",
+				"imgUrl": "/"
+			},
+			"1": {
+				"title": "Kana",
+				"position": "UI UX Design",
+				"description": "Development Branding",
+				"year": "2021",
+				"imgUrl": "/"
+			}
+		}
+	},
+	"prising": {
+		"title": "Pricing Table",
+		"description": "<0>Are you interested to work with me ? Here are my price list for design related work. [Lets talk](https://www.google.com) about project !</0><0>Donec imperdiet risus at tortor consequat maximus et.</0>",
+		"tables": {
+			"0": {
+				"title": "Full Time",
+				"subTitle": "Available for Full Time",
+				"price": "$1200",
+				"button": "Hire Me",
+				"skills": "<0>Brand Design</0><0>Advertising</0><0>Web Development</0><0>Photography</0>"
+			},
+			"1": {
+				"title": "Project Wise",
+				"subTitle": "Available for Freelancing",
+				"price": "$400",
+				"button": "Hire Me",
+				"skills": "<0>Brand Design</0><0>Advertising</0><0>Web Development</0><0>Photography</0>"
+			},
+			"2": {
+				"title": "Hourley",
+				"subTitle": "Available for Hourley Basis",
+				"price": "$60",
+				"button": "Hire Me",
+				"skills": "<0>Brand Design</0><0>Advertising</0><0>Web Development</0><0>Photography</0>"
+			}
+		},
+		"reviews": {
+			"0": {
+				"name": "Jennifer Smith",
+				"position": "CEO & Founder",
+				"description": "Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor"
+			},
+			"1": {
+				"name": "Petra Smith",
+				"position": "CEO & Founder",
+				"description": "Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor"
+			},
+			"2": {
+				"name": "Sandra Smith",
+				"position": "CEO & Founder",
+				"description": "Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor"
+			},
+			"3": {
+				"name": "Ivan Smith",
+				"position": "CEO & Founder",
+				"description": "Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor"
+			},
+			"4": {
+				"name": "Ketty Smith",
+				"position": "CEO & Founder",
+				"description": "Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor"
+			}
+		}
+	},
+	"blog": {
+		"title": "My Blog",
+		"description": "<0>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut.</0>",
+		"articles": [
+			{
+				"time": "8 Mins Read",
+				"date": "16 May 2021",
+				"title": "Usability Secrets to Create Better User Interfaces",
+				"description": "Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.",
+				"button": "Read more"
+			},
+			{
+				"time": "5 Mins Read",
+				"date": "15 May 2021",
+				"title": "10 Useful Tips to Improve Your UI Designs",
+				"description": "Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.",
+				"button": "Read more"
+			},
+			{
+				"time": "12 Mins Read",
+				"date": "14 May 2021",
+				"title": "How to Become a Successful UI/UX Designer",
+				"description": "Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.",
+				"button": "Read more"
+			}
+		]
+	},
+	"clients": {
+		"title": "My Clients",
+		"description": "<0>Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.</0>"
+	},
+	"contact": {
+		"title": "Contact Me",
+		"description": "Have a Question? or Just want to say Hi? Drop me a message!",
+		"button": "Send Message",
+		"phone": {
+			"icon": "+800 234 5678",
+			"label": "Name",
+			"placeholder": "Enter your full name"
+		},
+		"email": {
+			"icon": "hi@robertlong.com",
+			"label": "Email",
+			"placeholder": "Enter your email address"
+		},
+		"message": {
+			"icon": "43rd Street River Point NY 1023",
+			"label": "Message",
+			"placeholder": "Enter your email address"
+		}
+	},
+	"footer": {
+		"copyright": "© 2021 RobertLong.com, All Rights Reserved",
+		"designedBy": "Designed by WebDuck"
 	}
 }

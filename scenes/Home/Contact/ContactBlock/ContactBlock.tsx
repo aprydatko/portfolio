@@ -1,17 +1,19 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import { FormBlock } from '../Form/Form';
 import { AboutMeBlockSection, Container, MessageBlock, Wrapper } from './ContactBlock.styles';
 
 import { InfoBlock } from '../InfoBlock/InfoBlock';
 
 export const ContactBlock = (): JSX.Element => {
+	const { t, lang } = useTranslation();
 	return (
 		<AboutMeBlockSection>
 			<Container>
 				<InfoBlock />
 				<Wrapper>
 					<MessageBlock>
-						<p>Have a Question? or Just want to say Hi? Drop me a message!</p>
+						<p>{t('home:contact.description')}</p>
 					</MessageBlock>
 					<FormBlock />
 				</Wrapper>

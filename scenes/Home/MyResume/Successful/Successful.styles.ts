@@ -42,6 +42,10 @@ export const List = styled.ul`
 			background-color: ${({ theme }) => theme.color.font.primary};
 		}
 	}
+
+	@media only screen and (max-width: 650px) {
+		margin-left: 0px;
+	}
 `;
 
 export const Item = styled.li`

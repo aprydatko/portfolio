@@ -1,4 +1,5 @@
 export interface HeadlineDescriptionProps {
-	data: string[];
+	pageName: string;
+	sectionName: string;
 	className?: string;
 }

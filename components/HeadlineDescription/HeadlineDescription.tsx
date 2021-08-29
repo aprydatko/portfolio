@@ -1,16 +1,16 @@
 import React from 'react';
+import Trans from 'next-translate/Trans';
 import { HeadlineDescriptionProps } from './HeadlineDescription.props';
 import { Description, DescriptionWrap } from './HeadlineDescription.styles';
 
-export const HeadlineDescription = ({ data, className }: HeadlineDescriptionProps): JSX.Element => {
+export const HeadlineDescription = ({ pageName, sectionName, className }: HeadlineDescriptionProps): JSX.Element => {
 	return (
 		<DescriptionWrap className={className}>
 			<Description>
-				{data.map((description, index) => (
-					<div key={index}>
-						<p>{description}</p>
-					</div>
-				))}
+				<Trans
+					i18nKey={`${pageName}:${sectionName}.description`}
+					components={[<p></p>]}
+				/>
 			</Description>
 		</DescriptionWrap>
 	);

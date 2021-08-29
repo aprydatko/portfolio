@@ -32,6 +32,10 @@ export const Clients = styled.div`
 	margin-top: 115px;
 	display: flex;
 	justify-content: space-around;
+
+	@media screen and (max-width: 650px) {
+		flex-wrap: wrap;
+	}
 `;
 
 export const ClientItem = styled.div`

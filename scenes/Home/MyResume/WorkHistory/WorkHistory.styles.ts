@@ -22,12 +22,21 @@ export const Container = styled.div`
 	@media only screen and (max-width: 960px) {
 		justify-content: flex-start;
 	}
+
+	@media only screen and (max-width: 960px) {
+		flex-direction: column;
+	}
 `;
 
 export const Column = styled.div`
 	width: 225px;
+
 	@media only screen and (max-width: 960px) {
 		margin-right: 100px;
+	}
+
+	@media only screen and (max-width: 960px) {
+		width: 100%;
 	}
 `;
 

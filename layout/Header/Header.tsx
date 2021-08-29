@@ -5,12 +5,12 @@ import Navigation from './Navigation/Navigation';
 
 import { Grid } from '../../styles';
 
-export const Header = ({ ...props }): JSX.Element => {
+export const Header = ({ props }): JSX.Element => {
 	return (
 		<Head>
 			<Grid>
 				<Container>
-					<Navigation {...props} />
+					<Navigation {...props} props={props} />
 				</Container>
 			</Grid>
 		</Head>

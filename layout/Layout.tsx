@@ -7,7 +7,7 @@ import { Container } from './Layout.styles';
 const Layout = ({ children, ...props }: LayoutProps): JSX.Element => {
 	return (
 		<Container>
-			<Header {...props} />
+			<Header props={props} />
 			<div>
 				{children}
 			</div>

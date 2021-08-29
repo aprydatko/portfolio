@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 
 import Backpack from '../../../../assets/icons/backpack.svg';
 import Smile from '../../../../assets/icons/smile.svg';
-import Cup from '../../../../assets/icons/cup.svg';
+// import Cup from '../../../../assets/icons/cup.svg';
 
 import { Container, List, Item, Count, Text } from './Successful.styles';
 

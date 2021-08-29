@@ -2,18 +2,29 @@ import React, { useState } from 'react';
 import { ThemeProvider } from "styled-components";
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
-import { lightTheme, darkTheme, GlobalStyles  } from '../theme/theme';
+import { lightTheme, darkTheme, GlobalStyles } from '../theme/theme';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-  const [theme, setTheme] = useState("light"); 
+  const [theme, setTheme] = useState("light");
+  const [openMenu, setOpenMenu] = useState(false);
+  const [activeLanguage, setActiveLanguage] = useState('en');
   const activeTheme = theme == 'light' ? lightTheme : darkTheme;
 
   const toggleTheme = (theme: string): void => {
       theme == 'light' ? setTheme('dark') : setTheme('light');
   };
 
-  console.log('[theme]:', theme);
-  console.log('[activeTheme]:', activeTheme);
+  const toggleMenu = (): void => {
+    window.scroll(0, 0);
+    setOpenMenu(!openMenu);
+  };
+
+  const toggleLanguage = (language: string): void => {
+    setActiveLanguage(language);
+  };
+
+  // console.log('[theme]:', theme);
+  // console.log('[activeTheme]:', activeTheme);
 
   return <>
     <Head>
@@ -24,7 +35,15 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     <ThemeProvider theme={activeTheme}>
       <GlobalStyles />
       {/* <button onClick={toggleTheme}>Switch Theme</button> */}
-      <Component {...pageProps} toggleTheme={toggleTheme} theme={theme} />
+      <Component
+        toggleMenu={toggleMenu} 
+        toggleTheme={toggleTheme} 
+        toggleLanguage={toggleLanguage} 
+        theme={theme}
+        openMenu={openMenu} 
+        language={activeLanguage} 
+        {...pageProps} 
+      />
     </ThemeProvider>
   </>;
 }

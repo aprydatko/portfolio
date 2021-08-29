@@ -26,6 +26,7 @@ export const TestimonialsList = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 `;
 
 export const TestimonialsItem = styled.div`
@@ -47,6 +48,10 @@ export const TestimonialsItem = styled.div`
 		position: absolute;
 		bottom: -97px;
 		left: -30px;
+	}
+
+	@media screen and (max-width: 650px) {
+		margin: 0 6px;
 	}
 
 `;

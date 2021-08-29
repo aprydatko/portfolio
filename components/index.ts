@@ -5,3 +5,7 @@ export * from './Social/Social';
 export * from './Skills/Skills';
 export * from './PricingTable/PricingTable';
 export * from './Testimonials/Testimonials';
+export * from './MobileMenu/MobileMenu';
+export * from './InfoBlock/InfoBlock';
+export * from './QuickInformation/QuickInformation';
+export * from './ToggleLanguage/ToggleLanguage';

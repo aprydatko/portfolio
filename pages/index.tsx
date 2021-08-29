@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import React from 'react';
+import Head from 'next/head';
 import { withLayout } from '../layout/Layout';
 import { 
   Welcome, 
@@ -13,15 +13,18 @@ import {
   Map 
 } from '../scenes/Home';
 
+import { MobileMenu } from '../components';
+
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
 
 `;
 
-function Home(): JSX.Element {
+function Home(props): JSX.Element {
   return (
     <div>
+      <MobileMenu props={props} />
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Portfolio by Artur Prydatko" />

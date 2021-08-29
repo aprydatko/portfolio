@@ -39,7 +39,10 @@ export const List = styled.ul`
 			height: 100%;
 			background-color: ${({ theme }) => theme.color.font.primary};
 		}
+	}
 
+	@media only screen and (max-width: 650px) {
+		margin-left: 0px;
 	}
 `;
 

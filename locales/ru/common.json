@@ -1,3 +1,30 @@
 {
-	"title": "Atyr Pridatko"
+	"title": "Atyr Pridatko",
+	"menu": [
+		{
+			"id": 0,
+			"name": "О нас",
+			"hash": "about"
+		},
+		{
+			"id": 1,
+			"name": "Резюме",
+			"hash": "resume"
+		},
+		{
+			"id": 2,
+			"name": "Проекты",
+			"hash": "projects"
+		},
+		{
+			"id": 3,
+			"name": "Блог",
+			"hash": "blog"
+		},
+		{
+			"id": 4,
+			"name": "Контакты",
+			"hash": "contact"
+		}
+	]
 }

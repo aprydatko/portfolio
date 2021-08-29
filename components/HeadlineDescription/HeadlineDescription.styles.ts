@@ -21,6 +21,10 @@ export const Description = styled.div`
 		margin-left: 170px;
 	}
 
+	@media only screen and (max-width: 650px) {
+		margin-left: 0px;
+	}
+
 	& > div:first-child > p {
 		margin-top: 0px; 
 		font-weight: 400; 

@@ -20,7 +20,7 @@ export const Button = styled.button<Props>`
 
 	svg {
 		position: relative;
-		top: ${({ state }) => state === 'open' ? '10px' : '6px'};
+		top: ${({ state }) => state === 'open' ? '7px' : '11px'};
 	}
 
 	svg > path {

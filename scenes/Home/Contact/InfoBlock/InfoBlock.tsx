@@ -1,4 +1,5 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 
 import Phone from '../../../../assets/icons/phone.svg';
 import Email from '../../../../assets/icons/email.svg';
@@ -7,20 +8,21 @@ import Map from '../../../../assets/icons/map.svg';
 import { Container, List, Item, Text } from './InfoBlock.styles';
 
 export const InfoBlock = (): JSX.Element => {
+	const { t, lang } = useTranslation();
 	return (
 		<Container>
 			<List>
 				<Item>
 					<Phone />
-					<Text>+800 234 5678</Text>
+					<Text>{t('home:contact.phone.icon')}</Text>
 				</Item>
 				<Item>
 					<Email />
-					<Text>hi@robertlong.com</Text>
+					<Text>{t('home:contact.email.icon')}</Text>
 				</Item>
 				<Item>
 					<Map />
-					<Text>43rd Street  River Point <br /> NY 1023</Text>
+					<Text>{t('home:contact.message.icon')}</Text>
 				</Item>
 			</List>
 		</Container>

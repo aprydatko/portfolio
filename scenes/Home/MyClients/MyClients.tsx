@@ -18,7 +18,7 @@ export const MyClients = (): JSX.Element => {
 		<Container>
 			<GridContent>
 				<Htag tag="h2">My Clients</Htag>
-				<HeadlineDescription className="pricing-table" data={description} />
+				<HeadlineDescription className="pricing-table" pageName="home" sectionName="clients" />
 				<Clients>
 					<ClientItem><ClientOne /></ClientItem>
 					<ClientItem><ClientTwo /></ClientItem>

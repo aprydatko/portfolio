@@ -1,63 +1,45 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
+import Trans from 'next-translate/Trans';
 import { Button, Htag } from '../../../components';
 import { HeadlineDescription } from '../../../components/HeadlineDescription/HeadlineDescription';
 import { GridContent } from '../../../styles/Grid';
 import { Container, Articles, Article, DateContainer, TimeRead, Date, ContentContainer, Content, ArticleContentWrap } from './MyBlog.styles';
+import { MyBlogProps } from './MyBlog.props';
 
-const description = [
-		'Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.',
-		'Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut'
-];
-
-const articles = [
-	{
-		id: 0,
-		date: '16 May 2021',
-		time: 8,
-		title: 'Usability Secrets to Create Better User Interfaces',
-		content: 'Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.',
-	},
-	{
-		id: 1,
-		date: '15 May 2021',
-		time: 5,
-		title: '10 Useful Tips to Improve Your UI Designs',
-		content: 'Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.',
-	},
-	{
-		id: 2,
-		date: '14 May 2021',
-		time: 10,
-		title: 'How to Become a Successful UI/UX Designer',
-		content: 'Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.',
-	}
-];
+const ArticleComponent = ({ index, t }: MyBlogProps) => {
+	return (
+		<Article key={index} className={index % 2 != 0 ? 'black' : ''}>
+			<GridContent>
+				<ArticleContentWrap>
+					<DateContainer>
+						<TimeRead>{t(`home:blog.articles.${index}.time`) + ' Mins Read'}</TimeRead>
+						<Date>{t(`home:blog.articles.${index}.date`)}</Date>
+					</DateContainer>
+					<ContentContainer>
+						<Htag className="blog-title" tag="h3">{t(`home:blog.articles.${index}.title`)}</Htag>
+						<Trans
+							i18nKey={'home:blog.description'}
+							components={[<Content></Content>]}
+						/>
+						<Button className="blog-button" appearance="nostroke" size="small">{t(`home:blog.articles.${index}.button`)}</Button>
+					</ContentContainer>
+				</ArticleContentWrap>
+			</GridContent>
+		</Article>
+	);
+};
 
 export const MyBlog = (): JSX.Element => {
+	const { t, lang } = useTranslation();
 	return (
 		<Container>
 			<GridContent>
-				<Htag tag="h2">My Blog</Htag>
-				<HeadlineDescription className="my-blog" data={description} />
+				<Htag tag="h2">{t('home:blog.title')}</Htag>
+				<HeadlineDescription className="my-blog" pageName="home" sectionName="blog" />
 			</GridContent>
 			<Articles>
-				{articles.map(({ id, date, time, title, content }, index) => (
-					<Article key={id} className={index % 2 != 0 ? 'black' : ''}>
-						<GridContent>
-							<ArticleContentWrap>
-								<DateContainer>
-									<TimeRead>{time + ' Mins Read'}</TimeRead>
-									<Date>{date}</Date>
-								</DateContainer>
-								<ContentContainer>
-									<Htag className="blog-title" tag="h3">{title}</Htag>
-									<Content>{content}</Content>
-									<Button className="blog-button" appearance="nostroke" size="small">Read more</Button>
-								</ContentContainer>
-							</ArticleContentWrap>
-						</GridContent>
-					</Article>
-				))}
+				{[0, 1, 2].map(count =>  <ArticleComponent t={t} index={count} />)}
 			</Articles>
 		</Container>
 	);

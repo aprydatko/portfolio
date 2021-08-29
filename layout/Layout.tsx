@@ -3,10 +3,12 @@ import { LayoutProps } from './Layout.props';
 import { Header } from './Header/Header';
 import { Footer } from './Footer/Footer';
 import { Container } from './Layout.styles';
+import { MobileMenu } from '../components';
 
 const Layout = ({ children, ...props }: LayoutProps): JSX.Element => {
 	return (
 		<Container>
+			<MobileMenu props={props} />
 			<Header props={props} />
 			<div>
 				{children}

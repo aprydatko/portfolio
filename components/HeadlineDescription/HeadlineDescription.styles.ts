@@ -25,9 +25,14 @@ export const Description = styled.div`
 		margin-left: 0px;
 	}
 
+	& > p:first-child {
+		margin-top: 0px; 
+		font-weight: 400;
+	}
+
 	& > div:first-child > p {
 		margin-top: 0px; 
-		font-weight: 400; 
+		font-weight: 400;
 	}
 
 	& > div:last-child > p {

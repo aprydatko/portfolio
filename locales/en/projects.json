@@ -1,0 +1,61 @@
+{
+	"title": "My Projects",
+	"description": "<0>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut.</0>",
+	"button": "Load more",
+	"items": [
+		{
+			"title": "Zorro",
+			"position": "UI UX Design",
+			"description": "Interaction Design Branding",
+			"year": "2021",
+			"imgUrl": "/projects/zorro/zorro.jpg",
+			"originalImgUrl": "/projects/zorro/zorro-origin.jpg",
+			"url": "zorro"
+		},
+		{
+			"title": "Kana",
+			"position": "UI UX Design",
+			"description": "Development Branding",
+			"year": "2021",
+			"imgUrl": "/projects/kana/kana.jpg",
+			"originalImgUrl": "/projects/kana/kana-origin.jpg",
+			"url": "kana"
+		},
+		{
+			"title": "Zorro",
+			"position": "UI UX Design",
+			"description": "Interaction Design Branding",
+			"year": "2021",
+			"imgUrl": "/projects/zorro/zorro.jpg",
+			"originalImgUrl": "/projects/zorro/zorro-origin.jpg",
+			"url": "zorro"
+		},
+		{
+			"title": "Kana",
+			"position": "UI UX Design",
+			"description": "Development Branding",
+			"year": "2021",
+			"imgUrl": "/projects/kana/kana.jpg",
+			"originalImgUrl": "/projects/kana/kana-origin.jpg",
+			"url": "kana"
+		},
+		{
+			"title": "Zorro",
+			"position": "UI UX Design",
+			"description": "Interaction Design Branding",
+			"year": "2021",
+			"imgUrl": "/projects/zorro/zorro.jpg",
+			"originalImgUrl": "/projects/zorro/zorro-origin.jpg",
+			"url": "zorro"
+		},
+		{
+			"title": "Kana",
+			"position": "UI UX Design",
+			"description": "Development Branding",
+			"year": "2021",
+			"imgUrl": "/projects/kana/kana.jpg",
+			"originalImgUrl": "/projects/kana/kana-origin.jpg",
+			"url": "kana"
+		}
+	]
+}

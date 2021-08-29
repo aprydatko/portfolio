@@ -15,7 +15,7 @@ export const Email = styled.a`
 	margin-left: 150px;
 
 	font-size: ${({ theme }) => theme.fontSize[0]};
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 30px;
 
 	color: ${({ theme }) => theme.color.font.primary};

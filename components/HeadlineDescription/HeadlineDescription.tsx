@@ -8,7 +8,7 @@ export const HeadlineDescription = ({ pageName, sectionName, className }: Headli
 		<DescriptionWrap className={className}>
 			<Description>
 				<Trans
-					i18nKey={`${pageName}:${sectionName}.description`}
+					i18nKey={sectionName ? `${pageName}:${sectionName}.description` : `${pageName}:description`}
 					components={[<p></p>]}
 				/>
 			</Description>

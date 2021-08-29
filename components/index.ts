@@ -9,3 +9,5 @@ export * from './MobileMenu/MobileMenu';
 export * from './InfoBlock/InfoBlock';
 export * from './QuickInformation/QuickInformation';
 export * from './ToggleLanguage/ToggleLanguage';
+export * from './LetsTalk/LetsTalk';
+export * from './Autor/Autor';

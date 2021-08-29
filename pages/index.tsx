@@ -13,8 +13,6 @@ import {
   Map 
 } from '../scenes/Home';
 
-import { MobileMenu } from '../components';
-
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -24,7 +22,6 @@ const Wrapper = styled.div`
 function Home(props): JSX.Element {
   return (
     <div>
-      <MobileMenu props={props} />
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Portfolio by Artur Prydatko" />

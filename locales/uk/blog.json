@@ -1,0 +1,27 @@
+{
+	"title": "My Blog",
+	"description": "<0>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut.</0>",
+	"articles": [
+		{
+			"time": "8 Mins Read",
+			"date": "16 May 2021",
+			"title": "Usability Secrets to Create Better User Interfaces",
+			"description": "Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.",
+			"button": "Read more"
+		},
+		{
+			"time": "5 Mins Read",
+			"date": "15 May 2021",
+			"title": "10 Useful Tips to Improve Your UI Designs",
+			"description": "Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.",
+			"button": "Read more"
+		},
+		{
+			"time": "12 Mins Read",
+			"date": "14 May 2021",
+			"title": "How to Become a Successful UI/UX Designer",
+			"description": "Conec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo.",
+			"button": "Read more"
+		}
+	]
+}

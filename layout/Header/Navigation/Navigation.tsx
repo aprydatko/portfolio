@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router'
 import { MenuBlock, ThemeBlock, Email } from './Navigation.styles';
 
 import ToggleMenu from '../ToggleMenu/ToggleMenu';
@@ -7,13 +8,15 @@ import { ToggleLanguage } from '../../../components';
 
 const Navigation = ({ props }): JSX.Element => {
 	const { theme, toggleTheme, openMenu, toggleMenu, language, toggleLanguage } = props;
+	const router = useRouter();
+	const isHomePage = router.route === '/';
 	return (
 		<>
 			<MenuBlock>
 				<div onClick={toggleMenu}>
 					<ToggleMenu  state={openMenu ? 'open' : 'close'} />
 				</div>
-				{/* <Email href="malito:artyrpridatko@gmail.com">artyrpridatko@gmail.com</Email> */}
+				{!isHomePage && <Email href="malito:artyrpridatko@gmail.com">artyrpridatko@gmail.com</Email>}
 			</MenuBlock>
 			<ThemeBlock>
 				<ToggleLanguage 

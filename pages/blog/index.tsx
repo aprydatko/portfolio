@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-import { withLayout } from '../layout/Layout';
-import { MyBlog } from '../scenes/Blog';
+import { withLayout } from '../../layout/Layout';
+import { MyBlog } from '../../scenes/Blog';
 
-import { Autor, LetsTalk } from '../components';
+import { Autor, LetsTalk } from '../../components';
 
 function Home(): JSX.Element {
   return (

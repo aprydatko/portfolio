@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-import { withLayout } from '../layout/Layout';
-import { MyProjects } from '../scenes/Projects';
+import { withLayout } from '../../layout/Layout';
+import { MyProjects } from '../../scenes/Projects';
 
-import { LetsTalk } from '../components';
+import { LetsTalk } from '../../components';
 
 function Home(): JSX.Element {
   return (

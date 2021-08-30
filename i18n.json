@@ -5,6 +5,7 @@
      "*": ["common"],
     "/": ["home"],
     "/projects": ["projects"],
+    "/projects/zorro": ["project_zorro"],
     "/blog": ["blog"]
   }
 }

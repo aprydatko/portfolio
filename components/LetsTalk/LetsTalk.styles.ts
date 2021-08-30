@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
 
 export const Question = styled.h3`
 	margin-bottom: 0;
-	font-family: ${({ theme }) => theme.fontFamily.secondary};
+	font-family: ${({ theme }) => theme.fontFamily.primary};
 	font-size: ${({ theme }) => theme.fontSize[2]};
-	font-weight: 300;
+	font-weight: 700;
 `;
 
 export const Email = styled.a`

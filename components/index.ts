@@ -11,3 +11,4 @@ export * from './QuickInformation/QuickInformation';
 export * from './ToggleLanguage/ToggleLanguage';
 export * from './LetsTalk/LetsTalk';
 export * from './Autor/Autor';
+export * from './HeadlineDescription/HeadlineDescription';

@@ -9,7 +9,8 @@
 			"description": "Interaction Design Branding",
 			"year": "2021",
 			"imgUrl": "/projects/zorro/zorro.jpg",
-			"originalImgUrl": "/projects/zorro/zorro-origin.jpg"
+			"originalImgUrl": "/projects/zorro/zorro-origin.jpg",
+			"url": "zorro"
 		},
 		{
 			"title": "Kana",
@@ -17,7 +18,8 @@
 			"description": "Development Branding",
 			"year": "2021",
 			"imgUrl": "/projects/kana/kana.jpg",
-			"originalImgUrl": "/projects/kana/kana-origin.jpg"
+			"originalImgUrl": "/projects/kana/kana-origin.jpg",
+			"url": "kana"
 		},
 		{
 			"title": "Zorro",
@@ -25,7 +27,8 @@
 			"description": "Interaction Design Branding",
 			"year": "2021",
 			"imgUrl": "/projects/zorro/zorro.jpg",
-			"originalImgUrl": "/projects/zorro/zorro-origin.jpg"
+			"originalImgUrl": "/projects/zorro/zorro-origin.jpg",
+			"url": "zorro"
 		},
 		{
 			"title": "Kana",
@@ -33,7 +36,8 @@
 			"description": "Development Branding",
 			"year": "2021",
 			"imgUrl": "/projects/kana/kana.jpg",
-			"originalImgUrl": "/projects/kana/kana-origin.jpg"
+			"originalImgUrl": "/projects/kana/kana-origin.jpg",
+			"url": "kana"
 		},
 		{
 			"title": "Zorro",
@@ -41,7 +45,8 @@
 			"description": "Interaction Design Branding",
 			"year": "2021",
 			"imgUrl": "/projects/zorro/zorro.jpg",
-			"originalImgUrl": "/projects/zorro/zorro-origin.jpg"
+			"originalImgUrl": "/projects/zorro/zorro-origin.jpg",
+			"url": "zorro"
 		},
 		{
 			"title": "Kana",
@@ -49,7 +54,8 @@
 			"description": "Development Branding",
 			"year": "2021",
 			"imgUrl": "/projects/kana/kana.jpg",
-			"originalImgUrl": "/projects/kana/kana-origin.jpg"
+			"originalImgUrl": "/projects/kana/kana-origin.jpg",
+			"url": "kana"
 		}
 	]
 }

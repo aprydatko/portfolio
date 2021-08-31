@@ -1,18 +1,29 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import { GridContent } from '../../styles/Grid';
-import { Container } from './project.styles';
-import { Htag, HeadlineDescription } from '../../components';
+import { Container, Head, Image, Wrapper } from './project.styles';
+import { Block } from '../../components';
+import { ProjectsProps } from './project.props';
 
-export const ProjectTemplate = ({ children, ...props }): JSX.Element => {
+export const ProjectTemplate = ({ children, page }: ProjectsProps): JSX.Element => {
 	const { t, lang } = useTranslation();
-	console.log(props);
 	return (
 		<Container>
-			<GridContent>
-				<Htag tag="h2">{t('project_zorro:title')}</Htag>
-				
-			</GridContent>
+			<Head>
+				<Block
+					tag="h2" 
+					page={page} 
+					title="title"
+					description="header.description"
+					leftBlock={true}
+					firstBold={true}
+				/>
+			</Head>
+			<Image 
+				style={{ backgroundImage: `url(${t(`${page}:header.imgUrl`)})` }} 
+			/>
+			<Wrapper>
+				{children}
+			</Wrapper>
 		</Container>
 	);
 };

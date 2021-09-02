@@ -9,7 +9,6 @@ import { BlockProps } from './Block.props';
 export const Block = ({ page, leftBlock, title, description, tag, firstBold }: BlockProps): JSX.Element => {
 	const { t, lang } = useTranslation();
 	const Wrapper = ({ children }) => leftBlock ? <Header>{children}</Header> : children;
-	console.log('tag', tag);
 	return (
 		<Container className={tag !== 'h2' ? 'title': 'header'}>
 			<GridContent>

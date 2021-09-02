@@ -1,7 +1,7 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { Container, Head, Image, Wrapper } from './project.styles';
-import { Block } from '../../components';
+import { Block, NextProject } from '../../components';
 import { ProjectsProps } from './project.props';
 
 export const ProjectTemplate = ({ children, page }: ProjectsProps): JSX.Element => {
@@ -24,6 +24,7 @@ export const ProjectTemplate = ({ children, page }: ProjectsProps): JSX.Element 
 			<Wrapper>
 				{children}
 			</Wrapper>
+			<NextProject />
 		</Container>
 	);
 };

@@ -1,10 +1,8 @@
 import React from 'react';
-// import useTranslation from 'next-translate/useTranslation';
-// import Trans from 'next-translate/Trans';
 import Head from 'next/head';
 import { withLayout } from '../../layout/Layout';
 
-import { Block, LetsTalk } from '../../components';
+import { Block, LetsTalk, ImageBlock, VideoBlock, PerformanceBlock, DobbleBlock, Technology } from '../../components';
 import { ProjectTemplate } from '../../templates';
 
 function Zorro(): JSX.Element {
@@ -32,6 +30,27 @@ function Zorro(): JSX.Element {
             leftBlock={false}
             firstBold={true}
           />
+          <ImageBlock page="project_zorro" images={[1, 2]} />
+          <Block 
+            tag="h3"
+            page="project_zorro"
+            title="body.solution.title"
+            description="body.solution.description"
+            leftBlock={false}
+            firstBold={true}
+          />
+          <VideoBlock page="project_zorro" url="home_video" />
+          <PerformanceBlock page="project_zorro" />
+          <Block 
+            tag="h3"
+            page="project_zorro"
+            title="body.result.title"
+            description="body.result.description"
+            leftBlock={false}
+            firstBold={true}
+          />
+          <DobbleBlock page="project_zorro" />
+          <Technology page="project_zorro" technology={[0, 1, 2]} skills={[0, 1, 2, 3, 4]} />
         </ProjectTemplate>
 		    <LetsTalk />
       </>

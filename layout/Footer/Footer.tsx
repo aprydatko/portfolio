@@ -19,7 +19,9 @@ export const Footer = ({ ...props }: FooterProps): JSX.Element => {
 	return (
 		<Container>
 			<GridContent>
-				<FooterWrap>
+				<FooterWrap style={{
+					borderTop: '1px solid #ebe7e0',
+				}}>
 					<Social className="social" icons={['linkendin', 'gmail', 'github']} />
 					<Info>© {getDate(year)} {t('home:footer.copyright')}</Info>
 					<Desinged>{t('home:footer.designedBy')}</Desinged>

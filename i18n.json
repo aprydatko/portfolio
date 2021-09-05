@@ -6,6 +6,7 @@
     "/": ["home"],
     "/projects": ["projects"],
     "/projects/zorro": ["project_zorro"],
-    "/blog": ["blog"]
+    "/blog": ["blog"],
+    "/blog/blog-10-useful-tips-to-improve-your-ui-designs": ["blog-10-useful-tips-to-improve-your-ui-designs"]
   }
 }

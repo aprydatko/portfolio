@@ -1,43 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image'
-import { useRouter } from 'next/router';
-import { ButtonProps } from './ToggleLanguage.props';
+import { useRouter, withRouter  } from 'next/router';
 import { Wrapper, Select, Item } from './ToggleLanguage.styles';
 
-// import EngFlag from '../../public/flags/en.svg';
-// import RuFlag from '../../assets/icons/flags/ru.svg';
-import ukFlag from '../../public/flags/uk.png';
-
-export const ToggleLanguage = (props): JSX.Element => {
-	// console.log("props", props);
+export const ToggleLanguage = withRouter((props): JSX.Element => {
 	const router = useRouter();
 	const [open, setOpen] = useState(false);
-	const [value, setValue] = useState('en');
+	const [language, setLanguage] = useState('en');
 
-	const handleChange = (event) => {
-		event.preventDefault();
-		const language = event.target.value;
-
-
-		setValue(language);
-		router.push(`/${language}`);
-
-		// console.log('value', value);
-		// props.toggleLanguage(value);
+	useEffect(() => {
+		const pathname = window.location.pathname.split('/').find(t => t === 'en' || t === 'uk' || t === 'ru');
+		if (pathname && language !== pathname) {
+			setLanguage(pathname);
+		}
+	}, []);
+	
+	const handleClick = (lng: string): void => {
+		const url = `/${lng}`;
+		setOpen(!open);
+		setLanguage(lng);
+		router.push(url, url, { locale: lng });
 	};
 	return (
 		<Wrapper>
 			<Select>
-				{/* <Item><EngFlag className="icon" /></Item> */}
-				{/* <Item><RuFlag className="ru-icon" /></Item> */}
-				{/* <Item><Image src={ukFlag} alt="Picture of the author" /></Item> */}
+				{(language === 'uk' || open) && <Item title="Украинский язык" onClick={() => handleClick('uk')} style={{ backgroundImage: `url(/flags/uk.png)` }} />}
+				{(language === 'ru' || open) && <Item title="Русский язык" onClick={() => handleClick('ru')} style={{ backgroundImage: `url(/flags/ru.png)` }} />}
+				{(language === 'en' || open) && <Item title="Английский язык" onClick={() => handleClick('en')} style={{ backgroundImage: `url(/flags/en.png)` }} />}
 			</Select>
-
-			{/* <select onChange={(e) => handleChange(e)} value={value}>
-				<option value="en">en</option>
-				<option value="ru">ru</option>
-				<option value="uk">uk</option>
-			</select> */}
 		</Wrapper>
 	);
-};
+});

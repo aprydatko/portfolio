@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+	position: relative;
 	margin-right: 24px;
 `;
 
 export const Select = styled.div`
-	// overflow: hidden;
+	position: absolute;
+	top: -9px;
+	right: 0;
+	overflow: hidden;
 
 	&:hover {
 		// overflow: visible;
@@ -13,23 +17,16 @@ export const Select = styled.div`
 `;
 
 export const Item = styled.div`
-	// margin-bottom: 16px;
-
 	width: 30px;
 	height: 20px;
+	margin-bottom: 16px;
+
 	cursor: pointer;
-	background: white;
-	// overflow: hidden;
-
-	& .ru-icon {
-		width: 30px;
-	}
-
-	& svg > path {
-		// font-size: 0px;
-	}
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
 	&:hover {
-		// background: white;
+		opacity: .75;
 	}
 `;

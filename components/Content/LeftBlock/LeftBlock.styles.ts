@@ -21,10 +21,11 @@ export const InfoWrap = styled.div`
 
 export const Title = styled.div`
 	white-space: nowrap;
+	font-weight: 700;
 `;
 
 export const YearValue = styled.div`
-	font-weight: 700;
+	font-weight: 300;
 `;
 
 export const Value = styled.div`

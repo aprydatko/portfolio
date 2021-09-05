@@ -1,6 +1,6 @@
 import React from 'react';
-import { useRouter } from 'next/router'
-import { MenuBlock, ThemeBlock, Email } from './Navigation.styles';
+import { useRouter } from 'next/router';
+import { MenuBlock, ThemeBlock, Email, Line } from './Navigation.styles';
 
 import ToggleMenu from '../ToggleMenu/ToggleMenu';
 import ToggleTheme from '../ToggleTheme/ToggleTheme';
@@ -23,6 +23,7 @@ const Navigation = ({ props }): JSX.Element => {
 					language={language}
 					toggleLanguage={toggleLanguage} 
 				/>
+				<Line />
 				<ToggleTheme 
 					state={theme === 'light' ? 'dark' : 'light'}
 					toggleTheme={toggleTheme} 
@@ -30,6 +31,6 @@ const Navigation = ({ props }): JSX.Element => {
 			</ThemeBlock>
 		</>
 	);
-}
+};
 
 export default Navigation;

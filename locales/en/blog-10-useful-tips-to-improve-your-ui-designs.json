@@ -1,0 +1,44 @@
+{
+	"title": "10 Useful Tips to Improve Your UI Designs",
+	"header": {
+		"description": "<0>Aliquam a sapien diam. Phasellus pulvinar tellus aliquam eleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem. </0><0>In sed dolor ut ligula malesuada sollicitudin. Morbi iaculis convallis arcu, nec maximus tellus sodales in. Curabitur blandit enim at nisl lobortis, non pretium enim hendrer Cras iaculis, elit sit amet cursus consequat, tellus ligula egestas ante, eu vestibulum massa libero at purus. Suspendisse ac hendrerit magna. Nulla dignissim neque nunc, et malesuada massa semper id. Morbi eget justo ut dui auctor volutpat facilisis ac nequeam accumsan</0>",
+		"author": "Author",
+		"authorName": "Robert Long",
+		"category": "Category",
+		"categoryName": "UI Design",
+		"imgUrl": "/projects/zorro/zorro-origin.jpg"
+	},
+	"body": {
+		"images": [
+			"/projects/zorro/zorro-origin.jpg",
+			"/projects/zorro/zorro-origin.jpg",
+			"/projects/zorro/zorro-origin.jpg"
+		],
+		"listBlock": [
+			"In sed dolor ut ligula malesuada sollicitudin. Morbi iaculis convallis arcu, nec maximus tellus sodales in",
+			"Curabitur blandit enim at nisl lobortis, non pretium enim hendrer Cras iaculis, elit sit amet cursus consequat, tellus ligula egestas ante, eu vestibulum massa libero at purus.",
+			"Suspendisse ac hendrerit magna. Nulla dignissim neque nuet malesuada massa semper id. Morbi eget justo ut dui auctor volutpat facilisis ac nequeam accumsan."
+		],
+		"block1": {
+			"title": "Malesuda mmper curabitur nisi lobroti Vestibulum.",
+			"description": "<0>Aliquam a sapien diam. Phasellus pulvinar tellus aliquam eleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem. </0>"
+		},
+		"block2": {
+			"title": "Sapien diam phasellus pulvinar leo.",
+			"description": "<0>Aliquam a sapien diam. Phasellus pulvinar tellus aliquam eleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</0><0>Curabitur blandit enim at nisl lobortis, non pretium enim hendrer Cras iaculis, elit sit amet cursus consequat, tellus ligula egestas ante, eu vestibulum massa libero at purus.</0>"
+		},
+		"block3": {
+			"title": "Curabitur enim at nisi lobortis!",
+			"description": "<0>Aliquam a sapien diam. Phasellus pulvinar tellus aliquam eleifend consectetur. Sed bibendum leo quis rutrum aliquetmorbi Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.</0><0>Curabitur blandit enim at nisl lobortis, non pretium enim hendrer Cras iaculis, elit sit amet cursus consequat, tellus ligula egestas ante, eu vestibulum massa libero at purus.</0><0>Quisque non erat sit amet augue mattis ullamcorper et sed felis. Vestibulum nec lorem non nisl laoreet tempor eget a odio. Vivamus nec tristique turpis, non placerat justo. Quisque pharetra lobortis nunc in fringilla. Suspendisse iaculis, risus et pulvinar faucibus, nulla ipsum dictum lacus, eget mattis ex libero et turpis. Integer non metus velit. Nam luctus ex arcu, eget sagittis massa volutpat et. Suspendisse non purus gravida, tincidunt diam sit amet, fermentum elit.</0><0>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce erat nulla, placerat at porta vitae, ullamcorper vitae ante. Proin molestie augue faucibus nisi scelerisque, ac suscipit nibh tincidunt. Nunc ut orci imperdiet, posuere ligula pharetra, finibus augue. Morbi interdum hendrerit metus, non ullamcorper ligula posuere ut. Curabitur consectetur, velit eget egestas volutpat, augue velit fini rper vitae ante. Proin molestie augue fauci.</0>"
+		},
+		"reviews": {
+			"avatar": "/projects/zorro/zorro-origin.jpg",
+			"author": "Jennifer Smith",
+			"position": "CEO& Founder",
+			"description": "<0>Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit in volutpat arcu magna ac metus.</0>"
+		}
+	},
+	"footer": {
+		"tags": ["UI Desing", "Tutorial", "Guideline"]
+	}
+}

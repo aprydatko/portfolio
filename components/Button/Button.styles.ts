@@ -25,7 +25,7 @@ export const ButtonWrap = styled.button`
     }
 
     &.ghost {
-        color: ${({ theme }) => theme.color.main.black};
+        color: ${({ theme }) => theme.color.font.primary};
         background-color: transparent;
         border: 1px solid ${({ theme }) => theme.color.main.orange};
     }

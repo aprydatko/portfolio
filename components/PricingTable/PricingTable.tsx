@@ -17,7 +17,7 @@ const ItemComponent = ({ t, index }: ItemComponentProps): JSX.Element => {
 					components={[<Direction></Direction>]}
 				/>
 			</WorksList>
-			<Button className="button-full-time" appearance="ghost">{t(`home:prising.tables.${index}.button`)}</Button>
+			<Button className={`button-full-time ${index === 1 ? 'button-middle' : ''}`} appearance="ghost">{t(`home:prising.tables.${index}.button`)}</Button>
 		</TableItem>
 	);
 };

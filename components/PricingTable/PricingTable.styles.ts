@@ -29,6 +29,11 @@ export const TableItem = styled.div`
     	margin-top: 41px;
 	}
 
+	& .button-middle {
+		background-color: ${({ theme }) => theme.color.font.secondary};
+		color: ${({ theme }) => theme.color.main.white};
+	}
+
 	@media screen and (max-width: 960px) {
 		margin-bottom: 32px;
 		max-width: 320px;

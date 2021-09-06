@@ -12,8 +12,8 @@ export const Button = styled.button<Props>`
 	justify-content: center;
 	aligh-items: center;
 
-	width: 30px;
-	height: 30px;
+	width: 24px;
+	height: 25px;
 	background: transparent;
 	border: none;
 	cursor: pointer;

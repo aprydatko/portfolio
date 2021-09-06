@@ -15,6 +15,7 @@ export const FooterWrap = styled.footer`
 	font-size: 15px;
 	line-height: 1.3;
 	font-weight: 300;
+	color: ${({ theme }) => theme.color.main.black};
 
 	& > ul {
 		align-items: center;
@@ -56,6 +57,7 @@ export const FooterWrap = styled.footer`
 `;	
 
 export const Info = styled.div`
+	color: ${({ theme }) => theme.color.main.black};
 	@media screen and (max-width: 960px) {
 		line-height: 2;
 	}

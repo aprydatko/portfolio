@@ -19,7 +19,7 @@ export const Select = styled.div`
 `;
 
 export const Item = styled.div`
-	width: 30px;
+	width: 24px;
 	height: 20px;
 	margin-bottom: 16px;
 

@@ -25,17 +25,19 @@ export const Wrapper = styled.li`
 	}
 
 	& .linkendin {
-		
+		fill: ${({ theme }) => theme.color.main.black};
 	}
 
 	& .gmail {
 		position: relative;
 		top: -1px;
+		fill: ${({ theme }) => theme.color.main.black};
 	}
 
 	& .github {
 		position: relative;
 		top: 1px;
+		fill: ${({ theme }) => theme.color.main.black};
 	}
 
 	& .linkendin:hover {

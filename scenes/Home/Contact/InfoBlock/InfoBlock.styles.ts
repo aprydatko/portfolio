@@ -58,7 +58,7 @@ export const Item = styled.li`
 `;
 
 export const Text = styled.div`
-	font-size: ${({ theme }) => theme.fontSize[1]};
+	font-size: ${({ theme }) => theme.fontSize[0]};
 	line-height: 1.3;
 	font-weight: ${({ theme }) => theme.fontWeight.bold};
 `;

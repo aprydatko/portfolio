@@ -26,9 +26,10 @@ export const Textarea = styled.textarea`
 	margin-top: 9px;
 	max-width: 315px;
 
+	font-family: ${({ theme }) => theme.fontFamily.primary};
 	font-size: ${({ theme }) => theme.fontSize[1]};
 	line-height: ${({ theme }) => theme.lineHeight.body};
-	font-weight: 300;
+	font-weight: 400;
 
 	padding: 15px 30px;
 	padding-bottom: 29px;

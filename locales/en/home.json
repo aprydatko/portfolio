@@ -67,7 +67,7 @@
 	},
 	"projects": {
 		"title": "My Projects",
-		"description": "<0>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut.</0>",
+		"description": "<0>Here will be placed my projects, which I made to order or just for fun.</0><0>These are mainly commercial online stores, CRM admin panels, web and mobile applications.</0>",
 		"button": "Load more",
 		"items": {
 			"0": {
@@ -90,28 +90,28 @@
 	},
 	"prising": {
 		"title": "Pricing Table",
-		"description": "<0>Are you interested to work with me ? Here are my price list for design related work. [Lets talk](https://www.google.com) about project !</0><0>Donec imperdiet risus at tortor consequat maximus et.</0>",
+		"description": "<0>Here I have posted a price list for work related to my skills. There are three pricing options, choose the most profitable one.</0><0>We can always agree (:</0>",
 		"tables": {
 			"0": {
 				"title": "Full Time",
 				"subTitle": "Available for Full Time",
 				"price": "$1200",
 				"button": "Hire Me",
-				"skills": "<0>Brand Design</0><0>Advertising</0><0>Web Development</0><0>Photography</0>"
+				"skills": "<0>Support</0><0>Any complexity</0><0>Complex logic</0><0>Scalability</0>"
 			},
 			"1": {
-				"title": "Project Wise",
+				"title": "Specific project",
 				"subTitle": "Available for Freelancing",
 				"price": "$400",
 				"button": "Hire Me",
-				"skills": "<0>Brand Design</0><0>Advertising</0><0>Web Development</0><0>Photography</0>"
+				"skills": "<0>Support</0><0>Average difficulty</0><0>Medium logic</0><0>Scalability</0>"
 			},
 			"2": {
 				"title": "Hourley",
-				"subTitle": "Available for Hourley Basis",
+				"subTitle": "Available on this site",
 				"price": "$60",
 				"button": "Hire Me",
-				"skills": "<0>Brand Design</0><0>Advertising</0><0>Web Development</0><0>Photography</0>"
+				"skills": "<0>No</0><0>Improvement</0><0>Optimization</0><0>Small amount of work</0>"
 			}
 		},
 		"reviews": {
@@ -144,7 +144,7 @@
 	},
 	"blog": {
 		"title": "My Blog",
-		"description": "<0>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</0><0>Donec imperdiet risus at tortor consequat maximus et eget magna. Cras ornare sagittis augue, id sollicitudin justo tristique ut.</0>",
+		"description": "<0>In my blog there will be few articles on interesting topics, where I will briefly try to describe the main problems and their solutions.</0><0>Sometimes I will even come here and watch something, maybe.</0>",
 		"articles": [
 			{
 				"time": "8 Mins Read",
@@ -171,30 +171,30 @@
 	},
 	"clients": {
 		"title": "My Clients",
-		"description": "<0>Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.</0>"
+		"description": "<0>All clients who have used my services can place their logo here.</0>"
 	},
 	"contact": {
 		"title": "Contact Me",
 		"description": "Have a Question? or Just want to say Hi? Drop me a message!",
 		"button": "Send Message",
 		"phone": {
-			"icon": "+800 234 5678",
+			"icon": "+38 (050) 061-21-26",
 			"label": "Name",
 			"placeholder": "Enter your full name"
 		},
 		"email": {
-			"icon": "hi@robertlong.com",
+			"icon": "artyrpridatko@gmail.com",
 			"label": "Email",
 			"placeholder": "Enter your email address"
 		},
 		"message": {
-			"icon": "43rd Street River Point NY 1023",
+			"icon": "city of Sumy, Prokofiev street",
 			"label": "Message",
 			"placeholder": "Enter your email address"
 		}
 	},
 	"footer": {
-		"copyright": "© 2021 RobertLong.com, All Rights Reserved",
+		"copyright": "website.com, All Rights Reserved",
 		"designedBy": "Designed by WebDuck"
 	}
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AboutMeBlockSection = styled.div`
-	margin-top: 150px;
+	padding-top: 150px;
 	@media only screen and (max-width: 1200px) {
 		margin-top: 0px;
 	}

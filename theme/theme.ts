@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const defaultTheme = {
 	fontFamily: {
 		primary: 'Rubik, sans-serif',
-		secondary: 'Sorts Mill Goudy, serif',
+		secondary: 'Sorts Mill Goudy, Source Serif Pro, serif',
 	},
 	fontSize: [
 		'18px',

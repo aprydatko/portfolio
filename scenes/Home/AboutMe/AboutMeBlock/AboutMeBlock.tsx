@@ -11,7 +11,7 @@ import { Button } from '../../../../components';
 export const AboutMeBlock = (): JSX.Element => {
 	const { t, lang } = useTranslation();
 	return (
-		<AboutMeBlockSection>
+		<AboutMeBlockSection id="about">
 			<Htag tag="h2">{t('home:about.title')}</Htag>
 			<Container>
 				<Successful />

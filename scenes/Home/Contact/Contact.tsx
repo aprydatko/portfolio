@@ -8,7 +8,7 @@ import { Container } from './Contact.styles';
 export const Contact = (): JSX.Element => {
 	const { t, lang } = useTranslation();
 	return (
-		<Container>
+		<Container id="contact">
 			<GridContent>
 				<Htag tag="h2">{t('home:contact.title')}</Htag>
 				<ContactBlock />

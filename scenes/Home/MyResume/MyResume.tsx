@@ -6,7 +6,7 @@ import { MyResumeBlock } from './MyResumeBlock/MyResume';
 
 export const MyResume = (): JSX.Element => {
 	return (
-		<MyResumeSection>
+		<MyResumeSection id="resume">
 			<GridContent>
 				<MyResumeBlock />
 			</GridContent>

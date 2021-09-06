@@ -1,9 +1,13 @@
 {
-	"title": "Atyr Pridatko",
+	"title": "Артур Придатко",
+	"contacts": {
+		"phone": "+380500612126",
+		"email": "artyrpridatko@gmail.com"
+	},
 	"menu": [
 		{
 			"id": 0,
-			"name": "О нас",
+			"name": "Обо мне",
 			"hash": "about"
 		},
 		{
@@ -14,12 +18,14 @@
 		{
 			"id": 2,
 			"name": "Проекты",
-			"hash": "projects"
+			"hash": null,
+			"url": "projects"
 		},
 		{
 			"id": 3,
 			"name": "Блог",
-			"hash": "blog"
+			"hash": null,
+			"url": "blog"
 		},
 		{
 			"id": 4,

@@ -20,14 +20,15 @@
 	},
 	"about":{
 		"title": "About Me",
-		"description": "<0>My name is Artur Prydatko. I have been studying Front-end since September 2019. I like creating a cool project</0><0>The main direction is the development of online stores from scratch, delivery applications, CRM panels for accounting and editing of product items.</0><0>Most of the work I make front-end, but I also make a little back-end for processing requests, working with services.</0>",
+		"description": "<0>My name is Artur Pridatko. I started learning web development in 2019. I like to create simple interfaces that do complex functionality. I love experimenting with code, testing the best approaches, choosing modern practices.</0><0>Basically, I was engaged in the development of small e-commerce websites from scratch, applications for the delivery of food or services, CRM panels for accounting and editing of commodity items.</0><0>Most of the work I do with front-end rules, but I also do a little backend for handling requests, working with services.</0><0>In the course of my work, I understand well what the customer wants and try to find the best solution at a given time. I love my job and I want my customers to be happy too!</0>",
 		"button": "View Resume",
 		"successProject": "Successful Project",
-		"happyClients": "Happy Clients"
+		"happyClients": "Happy Clients",
+		"awwardsWon": "Awards Won"
 	},
 	"resume": {
 		"title": "My Resume",
-		"resume": "<0>I am developing an e-app admin panel for catering establishments. I create and improve online stores for popular chains of pizzerias, rolls, and more. I make applications for the delivery of goods.</0>",
+		"resume": "<0>Development of e-commerce stores, CRM admin panels for managing products, websites, payment forms, authorization, work with setting up a site's SEO, google analytics and google tag manager.</0><0>Development of single-page and multi-page applications and web applications using modern development tools.</0>",
 		"button": "Download Resume",
 		"skills": {
 			"title": "skills",
@@ -54,7 +55,7 @@
 				"date": "2020 - new",
 				"company": "Ithinkers",
 				"position": "Front/Web Developer",
-				"description": "I am developing an e-app admin panel for catering establishments. I create and improve online stores for popular chains of pizzerias, rolls, and more. I make applications for the delivery of goods."
+				"description": "I am developing e-commerce stores, making food delivery applications, developing a CRM website for product management."
 			},
 			"1": {
 				"date": "2019 - 2020",

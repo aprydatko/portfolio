@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(to top, ${({ theme }) => theme.color.body.secondary} 0% 65%, ${({ theme }) => theme.color.body.primary} 65% 100%);
-	z-index: 9999;
+	z-index: 999;
 	
 	&::before {
 		content: "";
@@ -47,7 +47,7 @@ export const HiddenMenu = styled.ul`
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 16px;
-	margin-left: 310px;
+	margin-left: 262px;
 
 	& ul {
 		position: absolute;

@@ -122,7 +122,7 @@ export const ExperiencePosition = styled.div`
 `;
 
 export const ExperienceDescription = styled.p`
-	margin: 7px 0;
+	margin: 12px 0;
 
 	font-size: 14px;
 	font-weight: 300;

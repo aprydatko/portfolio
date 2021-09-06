@@ -1,7 +1,8 @@
 export interface MenuItemProps {
 	id: number;
-	hash: string;
-	t: (string: string) => string;
+	hash?: string | null;
+	url?: string;
+	toggleMenu?: () => boolean;
 }
 
 export interface MenuProps {

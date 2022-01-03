@@ -152,4 +152,18 @@ export const GlobalStyles = createGlobalStyle`
 	color: ${({ theme }) => theme.color.font.primary};
 	background: ${({ theme }) => theme.color.body.primary};
   }
+
+  	&::-webkit-scrollbar {
+ 		width: 12px;   
+	}
+
+	&::-webkit-scrollbar-track {
+		background: ${({ theme }) => theme.color.body.primary};
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: ${({ theme }) => theme.color.body.secondary};
+		border-radius: 20px;
+		border: 3px solid ${({ theme }) => theme.color.body.primary};
+	}
 `;

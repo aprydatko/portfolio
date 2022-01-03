@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion/dist/framer-motion';
 
-export const Container = styled.ul`
+export const Container = styled(motion.ul)`
 	margin: 0;
 	padding: 0;
 
@@ -9,10 +10,13 @@ export const Container = styled.ul`
 	align-items: flex-start;
 	list-style-type: none;
 	z-index: 9999;
+	opacity: ${props => !props.trigger ? '1' : props.openMenu && 'mobileMenu' ? '1' : '0'};
+	transition: 1s;
+	transition-delay: 1.3s;
 `;
 
 export const Link = styled.a`
-
+	
 `;
 
 export const Wrapper = styled.li`
@@ -42,13 +46,16 @@ export const Wrapper = styled.li`
 
 	& .linkendin:hover {
 		fill: #0077b5;
+		transition 225ms;
 	}
 
 	& .gmail:hover {
 		fill: #F44336;
+		transition 225ms;
 	}
 
 	& .github:hover {
 		fill: #5C6BC0;
+		transition 225ms;
 	}
 `;

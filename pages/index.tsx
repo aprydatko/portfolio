@@ -1,4 +1,5 @@
 import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 import { withLayout } from '../layout/Layout';
 import { 
@@ -6,9 +7,9 @@ import {
   AboutMe, 
   MyResume, 
   MyProjects, 
-  Pricing, 
-  MyBlog, 
-  MyClients,
+  // Pricing, 
+  // MyBlog, 
+  // MyClients,
   Contact,
   Map 
 } from '../scenes/Home';
@@ -19,22 +20,23 @@ const Wrapper = styled.div`
 
 `;
 
-function Home(props): JSX.Element {
+function Home(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <div>
       <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Portfolio by Artur Prydatko" />
+        <title>{t('home:seo.title')}</title>
+        <meta name="description" content={t('home:seo.description')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Wrapper>
+      <Wrapper id="main">
         <Welcome />
         <AboutMe />
         <MyResume />
-        <MyProjects />
-        <Pricing />
-        <MyBlog />
-        <MyClients />
+        {/* <MyProjects /> */}
+        {/* <Pricing /> */}
+        {/* <MyBlog /> */}
+        {/* <MyClients /> */}
         <Contact />
         <Map />
       </Wrapper>

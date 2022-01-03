@@ -18,19 +18,17 @@
 		{
 			"id": 2,
 			"name": "Projects",
-			"hash": null,
-			"url": "projects"
+			"hash": "projects"
 		},
 		{
 			"id": 3,
-			"name": "Blog",
-			"hash": null,
-			"url": "blog"
+			"name": "Contact",
+			"hash": "contact"
 		},
 		{
 			"id": 4,
-			"name": "Contact",
-			"hash": "contact"
+			"name": "Map",
+			"hash": "map"
 		}
 	]
 }

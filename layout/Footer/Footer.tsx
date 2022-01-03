@@ -23,8 +23,11 @@ export const Footer = ({ ...props }: FooterProps): JSX.Element => {
 					borderTop: '1px solid #ebe7e0',
 				}}>
 					<Social className="social" icons={['linkendin', 'gmail', 'github']} />
-					<Info>© {getDate(year)} {t('home:footer.copyright')}</Info>
-					<Desinged>{t('home:footer.designedBy')}</Desinged>
+					<Info>© {getDate(year)}{', '}{'artyrpridatko.com.ua - '} {t('home:footer.copyright')}</Info>
+					<Desinged>
+						{t('home:footer.designedBy')}
+						<a target="blank" href="https://themeforest.net/item/ober-resume-cv-landing-page-psd-template/32500078#">WebDuck</a>
+					</Desinged>
 				</FooterWrap>
 			</GridContent>
 		</Container>

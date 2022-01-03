@@ -12,24 +12,37 @@ export const Button = styled.button<Props>`
 	justify-content: center;
 	aligh-items: center;
 
-	width: 24px;
-	height: 25px;
+	// width: 24px;
+	// height: 25px;
 	background: transparent;
 	border: none;
 	cursor: pointer;
 
+	svg.dark-icon {
+		transform: scale(.9);
+		top: 0px;
+		left: -1px;
+	}
+
+	svg.light-icon {
+		transform: scale(.9);
+		top: 0px;
+		left: -1px;
+	}
+
 	svg {
 		position: relative;
-		top: ${({ state }) => state === 'light' ? '4px' : '4px'};
 	}
 
 	svg > path {
 		fill: ${({ theme }) => theme.color.font.primary};
+		transition: fill .3s ease-out;
 	}
 
 	&:hover {
 		svg > path {
 			fill: ${({ theme }) => theme.color.font.secondary};
+			transition: fill .3s ease-out;
 		}
 	}
 `;

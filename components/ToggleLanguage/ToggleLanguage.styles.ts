@@ -1,15 +1,16 @@
+import { motion } from "framer-motion/dist/framer-motion";
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
 	position: relative;
-	margin-right: 24px;
+	// margin-right: 24px;
 	
 `;
 
 export const Select = styled.div`
 	position: absolute;
-	top: -9px;
-	right: 0;
+	top: -10px;
+	right: 2px;
 	overflow: hidden;
 	z-index: 999;
 
@@ -18,7 +19,7 @@ export const Select = styled.div`
 	}
 `;
 
-export const Item = styled.div`
+export const Item = styled(motion.div)`
 	width: 24px;
 	height: 20px;
 	margin-bottom: 16px;

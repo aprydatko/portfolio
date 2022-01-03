@@ -1,4 +1,8 @@
 {
+	"seo": {
+		"title": "Portfolio website by Artur Prydatko",
+		"description": "Personal website of Artur Pridatko. Creation of modern web projects, shops, admin panels, mobile application development, SEO optimization."
+	},
 	"welcome": {
 		"title": "Artyr Prydatko",
 		"subtitle": "Front-end developer",
@@ -194,7 +198,7 @@
 		}
 	},
 	"footer": {
-		"copyright": "website.com, All Rights Reserved",
-		"designedBy": "Designed by WebDuck"
+		"copyright": "All Rights Reserved",
+		"designedBy": "Designed by "
 	}
 }

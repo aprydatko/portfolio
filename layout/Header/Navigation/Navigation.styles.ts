@@ -20,9 +20,11 @@ export const Email = styled.a`
 
 	color: ${({ theme }) => theme.color.font.primary};
 	text-decoration: none;
+	transition: 225ms;
 
 	&:hover {
 		color: ${({ theme }) => theme.color.font.secondary};
+		transition: 225ms;
 	}
 `;
 
@@ -33,10 +35,12 @@ export const HiddenMenu = styled.div`
 `;
 
 export const Line = styled.div`
-	position: relative;
-	top: 2px;
-	left: -10px;
+	margin: 0 14px;
 	width: 1px;
-	height: 24px;
+	height: 25px;
 	background: ${({ theme }) => theme.color.body.secondary};
+
+	&.dark-line {
+		background: ${({ theme }) => theme.color.font.tertiary};
+	}
 `;

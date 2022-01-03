@@ -64,6 +64,11 @@ export const Info = styled.div`
 `;
 
 export const Desinged = styled.div`
+	& > a {
+		text-decoration: none;
+		color: ${props => props.theme.color.main.orange};
+	}
+
 	@media screen and (max-width: 960px) {
 		line-height: 2;
 	}

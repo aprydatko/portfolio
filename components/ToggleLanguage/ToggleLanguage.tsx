@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from "framer-motion/dist/framer-motion";
 import { useRouter, withRouter  } from 'next/router';
 import { Wrapper, Select, Item } from './ToggleLanguage.styles';
 
-export const ToggleLanguage = withRouter((props): JSX.Element => {
+export const ToggleLanguage = withRouter((): JSX.Element => {
 	const router = useRouter();
 	const [open, setOpen] = useState(false);
-	const [language, setLanguage] = useState('en');
+	const [language, setLanguage] = useState('');
+
+	const listVariants = {
+		visible: (i: any) => ({
+			opacity: 1,
+		}),
+		hidden: { opacity: 0,  }
+	};
 
 	useEffect(() => {
 		const pathname = window.location.pathname.split('/').find(t => t === 'en' || t === 'uk' || t === 'ru');
@@ -15,6 +23,7 @@ export const ToggleLanguage = withRouter((props): JSX.Element => {
 	}, []);
 	
 	const handleClick = (lng: string): void => {
+		console.log('--- ---', lng);
 		const url = `/${lng}`;
 		setOpen(!open);
 		setLanguage(lng);
@@ -23,9 +32,24 @@ export const ToggleLanguage = withRouter((props): JSX.Element => {
 	return (
 		<Wrapper>
 			<Select>
-				{(language === 'uk' || open) && <Item title="Украинский язык" onClick={() => handleClick('uk')} style={{ backgroundImage: `url(/flags/uk.png)` }} />}
-				{(language === 'ru' || open) && <Item title="Русский язык" onClick={() => handleClick('ru')} style={{ backgroundImage: `url(/flags/ru.png)` }} />}
-				{(language === 'en' || open) && <Item title="Английский язык" onClick={() => handleClick('en')} style={{ backgroundImage: `url(/flags/en.png)` }} />}
+				<AnimatePresence>
+					{['uk', 'ru', 'en'].map((lng, index) => {
+						if (language === lng || open) {
+							return (
+								<Item 
+									key={lng} 
+									title="Украинский язык" 
+									onClick={() => handleClick(lng)} 
+									style={{ backgroundImage: `url(/flags/${lng}.png)` }}
+									variants={listVariants} 
+									initial="hidden"
+									animate="visible"
+									custom={index}
+								/>
+							)
+						}
+					})}
+				</AnimatePresence>
 			</Select>
 		</Wrapper>
 	);

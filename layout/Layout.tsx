@@ -6,11 +6,14 @@ import { Container } from './Layout.styles';
 import { MobileMenu } from '../components';
 
 const Layout = ({ children, ...props }: LayoutProps): JSX.Element => {
-	console.log('props mobile menu', props);
+	console.log('props layout', props);
 	return (
-		<Container>
-			<MobileMenu props={props} />
-			<Header props={props} />
+		<Container openMenu={props.openMenu}>
+			<MobileMenu 
+				openMenu={props.openMenu} 
+				toggleMenu={props.toggleMenu} 
+			/>
+			<Header {...props} />
 			<div>
 				{children}
 			</div>

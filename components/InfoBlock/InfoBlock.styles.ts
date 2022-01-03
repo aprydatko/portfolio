@@ -11,6 +11,7 @@ export const WelcomeInfo = styled.div`
   position: relative;
 
   box-sizing: border-box;
+  z-index: 9999;
 
   & .quick-information {
     display: flex;

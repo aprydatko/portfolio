@@ -18,19 +18,17 @@
 		{
 			"id": 2,
 			"name": "Проекты",
-			"hash": null,
-			"url": "projects"
+			"hash": "projects"
 		},
 		{
 			"id": 3,
-			"name": "Блог",
-			"hash": null,
-			"url": "blog"
+			"name": "Контакты",
+			"hash": "contact"
 		},
 		{
 			"id": 4,
-			"name": "Контакты",
-			"hash": "contact"
+			"name": "Карта",
+			"hash": "map"
 		}
 	]
 }

@@ -1,22 +1,45 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion/dist/framer-motion';
 
-export const Wrapper = styled.div`
+interface WrapperProps {
+	openMenu: boolean;
+}
+
+export const Wrapper = styled(motion.div)<WrapperProps>`
+	position: relative;
 	display: flex;
 	flex-direction: column;
+
+	opacity: ${props => props.openMenu ? '1' : '0'};
+	z-index: ${props => props.openMenu ? '9999' : '-1'};
 
 	position: fixed;
 	top: 0;
 	left: 0;
 
 	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, ${({ theme }) => theme.color.body.secondary} 0% 65%, ${({ theme }) => theme.color.body.primary} 65% 100%);
-	z-index: 999;
+	height: 100vh;
+	// background: linear-gradient(to top, ${({ theme }) => theme.color.body.secondary} 0% 63%, ${({ theme }) => theme.color.body.primary} 63% 100%);
+	background: ${({ theme }) => theme.color.body.primary};
+	// z-index: 9999;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: ${props => props.openMenu ? '63%' : '0'};
+		background: ${({ theme }) => theme.color.body.secondary};
+		z-index: -1;
+		transition: 1s;
+		transition-delay: .3s;
+	}
 	
 	&::before {
 		content: "";
 		position: absolute;
-		bottom: 0;
+		bottom: ${props => props.openMenu ? '0' : '-320px'};
 		right: -80px;
 		width: 300px;
 		height: 350px;
@@ -24,35 +47,44 @@ export const Wrapper = styled.div`
 		background-size: inherit;
 		background-repeat: no-repeat;
 		background-position: 0% 100%;
-	}
-
-	& > div{
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-
-		position: absolute;
-		top: calc(68% - 115px);
-		right: 15%;
-		height: 200px;
+		transition: 1.5s;
+		transition-delay: .3s;
 	}
 `;
 
-export const HiddenMenu = styled.ul`
+export const HiddenMenu = styled.div`
 	position: relative;
-	display: flex;
-	flex-direction: column;
+	top: 0;
+	left: 126px;
+`;
 
-	max-width: 1250px;
-	width: 100%;
-	margin: 0 auto;
+export const ItemWrap = styled(motion.li)`
+	& > a {
+		font-family: ${({ theme }) => theme.fontFamily.secondary};
+		font-size: 76px;
+		line-height: 1.6;
+		text-decoration: none;
+		color: ${({ theme }) => theme.color.font.primary};
+		transition: 225ms;
+		&:hover {
+			color: ${({ theme }) => theme.color.font.secondary};
+			transition: 225ms;
+		}
+	}
+`;
+
+export const WrapperMenu = styled.div`
+	position: relative;
 	padding: 0 16px;
-	margin-left: 262px;
+    max-width: 1250px;
+	width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 
 	& ul {
 		position: absolute;
 		bottom: 33px;
-		left: -152px;
+		left: 24px;
 		// background: red;
 		display: flex;
     	flex-direction: column;
@@ -72,19 +104,6 @@ export const HiddenMenu = styled.ul`
 			& .github {
 				position: static;
 			}
-		}
-	}
-`;
-
-export const ItemWrap = styled.li`
-	& > a {
-		font-family: ${({ theme }) => theme.fontFamily.secondary};
-		font-size: 76px;
-		line-height: 1.6;
-		text-decoration: none;
-		color: ${({ theme }) => theme.color.font.primary};
-		&:hover {
-			color: ${({ theme }) => theme.color.font.secondary};
 		}
 	}
 `;

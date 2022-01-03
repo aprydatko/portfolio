@@ -35,7 +35,6 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     </Head>
     <ThemeProvider theme={activeTheme}>
       <GlobalStyles />
-      {/* <button onClick={toggleTheme}>Switch Theme</button> */}
       <Component
         toggleMenu={toggleMenu} 
         toggleTheme={toggleTheme} 

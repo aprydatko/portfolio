@@ -1,17 +1,35 @@
 import React from 'react';
 import Link from "next/link";
 import useTranslation from 'next-translate/useTranslation';
-import { MenuItemProps } from './MobileMenu.props';
-import { Wrapper, HiddenMenu, ItemWrap  } from './MobileMenu.styles';
+import { MenuItemProps, MobileMenuProps } from './MobileMenu.props';
+import { Wrapper, HiddenMenu, ItemWrap, WrapperMenu } from './MobileMenu.styles';
 
 import common from '../../locales/en/common.json';
 import { Header } from '../../layout/Header/Header';
 import { Social, InfoBlock } from '../../components';
+import { motion } from 'framer-motion/dist/framer-motion';
 
-const MenuItem = ({ id, hash, url, toggleMenu }: MenuItemProps): JSX.Element => {
+const menuAnimate = {
+	visible: (i: number) => ({
+		opacity: 1,
+		y: 0,
+		transition: {
+			delay: i * 0.25,
+		}
+	}),
+	hidden: { opacity: 0, y: 100 }
+}
+
+const MenuItem = ({ id, hash, url, openMenu, toggleMenu }: MenuItemProps): JSX.Element => {
 	const { t } = useTranslation();
 	return (
-		<ItemWrap key={id}>
+		<ItemWrap 
+			key={id}
+			variants={menuAnimate}
+			initial={openMenu ? 'hidden' : 'visible'}
+			animate={openMenu ? 'visible' : 'hidden'}
+			custom={id}
+		>
 			<Link
 				href={{
 				pathname: url ? "/" + t(`common:menu.${id}.url`) : '/',
@@ -26,24 +44,32 @@ const MenuItem = ({ id, hash, url, toggleMenu }: MenuItemProps): JSX.Element => 
 	);
 };
 
-export const MobileMenu = ({ props }): JSX.Element => {
+export const MobileMenu = ({ openMenu, toggleMenu, ...props }: MobileMenuProps): JSX.Element => {
 	const { t } = useTranslation();
 	const { menu } = common;
 	return (
-		<>
-		{props.openMenu && (
-			<Wrapper>
-				<Header props={props} />
+		<Wrapper 
+			openMenu={openMenu}
+		>
+			<Header openMenu={openMenu} toggleMenu={toggleMenu} {...props} />
+			<WrapperMenu>
+				<Social 
+					className="social" 
+					icons={['linkendin', 'gmail', 'github']}
+					openMenu={openMenu}
+					trigger="mobileMenu"
+				 />
 				<HiddenMenu>
-					<Social className="social" icons={['linkendin', 'gmail', 'github']} />
-					{menu.map(item => <MenuItem {...item} toggleMenu={props.toggleMenu} />)}
+					{menu.map((item, index) => 
+						<div key={index}>
+							<MenuItem openMenu={openMenu} toggleMenu={toggleMenu} {...item} id={index} />
+						</div>)}
 				</HiddenMenu>
-				<InfoBlock 
-					page="home"
-					section="welcome"
-				/>
-			</Wrapper>
-		)}
-		</>
+			</WrapperMenu>
+			<InfoBlock 
+				page="home"
+				section="welcome"
+			/>
+		</Wrapper>
 	);
 };

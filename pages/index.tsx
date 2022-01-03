@@ -7,8 +7,8 @@ import {
   AboutMe, 
   MyResume, 
   MyProjects, 
-  // Pricing, 
-  // MyBlog, 
+  Pricing, 
+  // MyBlog,  
   // MyClients,
   Contact,
   Map 
@@ -33,8 +33,8 @@ function Home(): JSX.Element {
         <Welcome />
         <AboutMe />
         <MyResume />
-        {/* <MyProjects /> */}
-        {/* <Pricing /> */}
+        <MyProjects />
+        <Pricing />
         {/* <MyBlog /> */}
         {/* <MyClients /> */}
         <Contact />

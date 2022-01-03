@@ -6,6 +6,7 @@ interface Props {
 }
 
 export const Button = styled(motion.button)<Props>`
+	position: relative;
 	padding: 0;
 	margin: 0;
 

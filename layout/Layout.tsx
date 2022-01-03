@@ -11,7 +11,8 @@ const Layout = ({ children, ...props }: LayoutProps): JSX.Element => {
 		<Container openMenu={props.openMenu}>
 			<MobileMenu 
 				openMenu={props.openMenu} 
-				toggleMenu={props.toggleMenu} 
+				toggleMenu={props.toggleMenu}
+				{...props} 
 			/>
 			<Header {...props} />
 			<div>

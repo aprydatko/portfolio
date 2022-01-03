@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuBlock = styled.div`
-	position: relative;
+	// position: relative;
 	display: flex;
 `;
 

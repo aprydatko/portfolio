@@ -7,7 +7,6 @@ import { Wrapper, HiddenMenu, ItemWrap, WrapperMenu } from './MobileMenu.styles'
 import common from '../../locales/en/common.json';
 import { Header } from '../../layout/Header/Header';
 import { Social, InfoBlock } from '../../components';
-import { motion } from 'framer-motion/dist/framer-motion';
 
 const menuAnimate = {
 	visible: (i: number) => ({

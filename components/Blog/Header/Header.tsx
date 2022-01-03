@@ -4,7 +4,7 @@ import Trans from 'next-translate/Trans';
 import { GridContent } from '../../../styles/Grid';
 import { Header, Content, Container, TimeRead, Time, Date } from './Header.styles';
 import { Htag, LeftBlock } from '../../../components';
-import { BlockProps } from './Header.props';
+import { BlockProps, WrapperProps } from './Header.props';
 
 export const HeaderBlog = ({ 
 	page, 
@@ -20,7 +20,7 @@ export const HeaderBlog = ({
 	categoryTextBlock, 
 }: BlockProps): JSX.Element => {
 	const { t, lang } = useTranslation();
-	const Wrapper = ({ children }) => leftBlock ? <Header>{children}</Header> : children;
+	const Wrapper = ({ children }: WrapperProps) => leftBlock ? <Header>{children}</Header> : <>{children}</>;
 	return (
 		<Container className={`${tag !== 'h2' ? 'title': 'header'} ${className}`}>
 			<GridContent>

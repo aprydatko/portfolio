@@ -1,7 +1,7 @@
 import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { GridContent } from '../../../styles/Grid';
-import { Header, Content, Container, Image, ImageWrap } from './ImageBlock.styles';
+import { Container, Image, ImageWrap } from './ImageBlock.styles';
 import { ImageBlockProps } from './ImageBlock.props';
 
 export const ImageBlock = ({ page, images }: ImageBlockProps): JSX.Element => {

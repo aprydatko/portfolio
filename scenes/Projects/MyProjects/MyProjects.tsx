@@ -5,7 +5,7 @@ import { FullImgComponentProps, ProjectComponentProps } from './MyProjects.props
 import { HeadlineDescription } from '../../../components/HeadlineDescription/HeadlineDescription';
 import { GridContent } from '../../../styles/Grid';
 import projectJson from '../../../locales/en/projects.json';
-import { ButtonWrap, Container, Position, Project, ProjectDescriptionWrap, ProjectImage, ProjectInfo, Projects, Year, FullImg, FullImgWrap, ButtonClose } from './MyProjects.styles';
+import { ButtonWrap, Container, Position, Project, ProjectDescriptionWrap, ProjectImage, ProjectInfo, Projects, Year, FullImg, FullImgWrap } from './MyProjects.styles';
 import IconClose from '../../../assets/icons/menu-close.svg';
 
 const FullImgComponent = ({ handleImgOrigin, index }: FullImgComponentProps) => {

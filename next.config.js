@@ -33,4 +33,5 @@ module.exports = nextTranslate({
 		return config;
 	},
 	webpack5: false,
+	publicRuntimeConfig: {}
 });

@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface BlockProps {
 	tag: "h1" | "h2" | "h3" | "h4" | "h5";
 	page: string;
@@ -10,4 +12,8 @@ export interface BlockProps {
 	titleTextBlock?: string;
 	categoryBlock?: string;
 	categoryTextBlock?: string;
+}
+
+export interface WrapperProps {
+	children?: ReactNode;
 }

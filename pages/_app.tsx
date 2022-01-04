@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   };
 
   const toggleMenu = (): void => {
-    window.scroll(0, 0);
+    // window.scroll(0, 0);
     setOpenMenu(!openMenu);
   };
 

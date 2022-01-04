@@ -4,4 +4,5 @@ export interface SocialProps {
 	className?: string;
 	trigger?: string;
 	openMenu?: boolean;
+	themeName?: string;
 }

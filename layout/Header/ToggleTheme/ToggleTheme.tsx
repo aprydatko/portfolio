@@ -6,12 +6,8 @@ import ThemeLight from '../../../assets/icons/theme-mode-light.svg';
 import ThemeDark from '../../../assets/icons/theme-mode-dark.svg';
 
 const ToggleTheme = ({ state, toggleTheme }: ToggleThemeProps): JSX.Element => {
-	console.log('-- init --', state, toggleTheme)
 	const handleClick = () => {
-		if (toggleTheme) {
-			console.log('state', state);
-			toggleTheme(state === 'light' ? 'dark' : 'light');
-		}
+		toggleTheme && toggleTheme(state === 'light' ? 'dark' : 'light');
 	};
 	return (
 		<Button

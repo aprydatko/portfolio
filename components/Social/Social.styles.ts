@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion/dist/framer-motion';
 
+interface WrapperProps {
+	openMenu?: boolean;
+	themeName?: string;
+}
+
 export const Container = styled(motion.ul)`
 	margin: 0;
 	padding: 0;
@@ -11,37 +16,37 @@ export const Container = styled(motion.ul)`
 	list-style-type: none;
 	z-index: 9999;
 	opacity: ${props => !props.trigger ? '1' : props.openMenu && 'mobileMenu' ? '1' : '0'};
-	transition: 1s;
-	transition-delay: 1.3s;
+	transition: ${props => props.openMenu ? '1s' : '0s'};
+	transition-delay: ${props => props.openMenu ? '1.3s' : '0s'};
 `;
 
 export const Link = styled.a`
 	
 `;
 
-export const Wrapper = styled.li`
+export const Wrapper = styled.li<WrapperProps>`
 	margin-right: 24px;
 	line-height: 1;
 
 	& svg {
 		width: 19px;
-		fill: ${({ theme }) => theme.color.font.primary};
+		fill: ${({ theme, themeName, openMenu }) => themeName !== 'dark' ? theme.color.main.black : theme.color.main.violet};
 	}
 
 	& .linkendin {
-		fill: ${({ theme }) => theme.color.main.black};
+		// fill: ${({ theme }) => theme.color.main.black};
 	}
 
 	& .gmail {
 		position: relative;
 		top: -1px;
-		fill: ${({ theme }) => theme.color.main.black};
+		// fill: ${({ theme }) => theme.color.main.black};
 	}
 
 	& .github {
 		position: relative;
 		top: 1px;
-		fill: ${({ theme }) => theme.color.main.black};
+		// fill: ${({ theme }) => theme.color.main.black};
 	}
 
 	& .linkendin:hover {

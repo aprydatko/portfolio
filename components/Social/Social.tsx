@@ -6,7 +6,8 @@ import LinkendinIcon from '../../assets/icons/linkendin.svg';
 import GmailIcon from '../../assets/icons/gmail.svg';
 import GitHubIcon from '../../assets/icons/github.svg';
 
-export const Social = ({ icons, icon, openMenu, trigger, className }: SocialProps): JSX.Element => {
+export const Social = ({ icons, icon, openMenu, trigger, className, themeName }: SocialProps): JSX.Element => {
+	console.log('theme', themeName);
 	const getIcon = (icon: string): JSX.Element => {
 		switch(icon) {
 			case 'linkendin':
@@ -28,9 +29,9 @@ export const Social = ({ icons, icon, openMenu, trigger, className }: SocialProp
 			openMenu={openMenu}
 			trigger={trigger}
 		>
-			{icon && <Wrapper>{getIcon(icon)}</Wrapper>}
+			{icon && <Wrapper openMenu={openMenu} themeName={themeName}>{getIcon(icon)}</Wrapper>}
 			{icons && icons.map((it, index) => 
-				<Wrapper key={index}>
+				<Wrapper openMenu={openMenu} themeName={themeName} key={index}>
 					{getIcon(it)}
 				</Wrapper>)}
 		</Container>

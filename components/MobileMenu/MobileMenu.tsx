@@ -56,6 +56,7 @@ export const MobileMenu = ({ openMenu, toggleMenu, ...props }: MobileMenuProps):
 					className="social" 
 					icons={['linkendin', 'gmail', 'github']}
 					openMenu={openMenu}
+					// themeName={props.theme}
 					trigger="mobileMenu"
 				 />
 				<HiddenMenu>
@@ -65,7 +66,9 @@ export const MobileMenu = ({ openMenu, toggleMenu, ...props }: MobileMenuProps):
 						</div>)}
 				</HiddenMenu>
 			</WrapperMenu>
-			<InfoBlock 
+			<InfoBlock
+				className="mobile-menu"
+				openMenu={openMenu} 
 				page="home"
 				section="welcome"
 			/>

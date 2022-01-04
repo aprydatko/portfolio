@@ -9,4 +9,6 @@ export interface MenuItemProps {
 export interface MobileMenuProps {
 	openMenu?: boolean;
 	toggleMenu?: () => any;
+	// theme?: string;
+	toggleTheme?: () => void;
 }

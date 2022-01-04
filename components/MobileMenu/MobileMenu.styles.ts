@@ -17,7 +17,7 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
 	top: 0;
 	left: 0;
 
-	width: 100%;
+	width: calc(100% - 12px);
 	height: 100vh;
 	// background: linear-gradient(to top, ${({ theme }) => theme.color.body.secondary} 0% 63%, ${({ theme }) => theme.color.body.primary} 63% 100%);
 	background: ${({ theme }) => theme.color.body.primary};
@@ -32,7 +32,7 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
 		height: ${props => props.openMenu ? '63%' : '0'};
 		background: ${({ theme }) => theme.color.body.secondary};
 		z-index: -1;
-		transition: 1s;
+		transition: height 1s;
 		transition-delay: .3s;
 	}
 	
@@ -47,7 +47,7 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
 		background-size: inherit;
 		background-repeat: no-repeat;
 		background-position: 0% 100%;
-		transition: 1.5s;
+		transition: bottom 1.5s;
 		transition-delay: .3s;
 	}
 `;

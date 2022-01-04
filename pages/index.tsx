@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
 `;
 
-function Home(): JSX.Element {
+function Home(props: any): JSX.Element {
   const { t } = useTranslation();
   return (
     <div>
@@ -30,7 +30,7 @@ function Home(): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Wrapper id="main">
-        <Welcome />
+        <Welcome openMenu={props.openMenu} />
         <AboutMe />
         <MyResume />
         <MyProjects />

@@ -33,8 +33,8 @@ function Home(props: any): JSX.Element {
         <Welcome openMenu={props.openMenu} />
         <AboutMe />
         <MyResume />
-        <MyProjects />
-        <Pricing />
+        {/* <MyProjects /> */}
+        {/* <Pricing /> */}
         {/* <MyBlog /> */}
         {/* <MyClients /> */}
         <Contact />

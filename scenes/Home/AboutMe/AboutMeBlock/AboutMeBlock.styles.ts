@@ -4,6 +4,7 @@ export const AboutMeBlockSection = styled.div`
 	padding-top: 150px;
 	@media only screen and (max-width: 1200px) {
 		margin-top: 0px;
+		padding-top: 70px;
 	}
 `;
 
@@ -36,6 +37,10 @@ export const Wrapper = styled.div`
 
 	& .button-resume {
 		margin-top: 26px;
+
+		@media screen and (max-width: 650px) {
+			width: 100%;
+		}
 	}
 
 	& .signature-icon {

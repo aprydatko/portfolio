@@ -6,6 +6,10 @@ export const AboutMeBlockSection = styled.div`
 	@media screen and (max-width: 960px) {
 		padding-top: 60px;
 	}
+
+	@media screen and (max-width: 650px) {
+		padding-top: 16px;
+	}
 `;
 
 export const Container = styled.div`
@@ -14,7 +18,7 @@ export const Container = styled.div`
 
 	display: flex;
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1200px) {
 		flex-direction: column;
 	}
 `;
@@ -47,12 +51,12 @@ export const Wrapper = styled.div`
 		height: 72%;
 		background-color: ${({ theme }) => theme.color.font.primary};
 
-		@media screen and (max-width: 960px) {
+		@media screen and (max-width: 1200px) {
 			content: none;
 		}
 	}
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1200px) {
 		max-width: 100%;
 		padding: 0;
 		padding-top: 30px;

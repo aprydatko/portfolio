@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const MyResumeSection = styled.div`
   position: relative;
   padding-top: 155px;
-  padding-bottom: 214px;
+  padding-bottom: 155px;
   overflow: hidden;
 
   &::after {
@@ -33,6 +33,11 @@ export const MyResumeSection = styled.div`
   @media only screen and (max-width: 1200px) {
 		padding-top: 60px;
     padding-bottom: 100px;
+	}
+
+  @media only screen and (max-width: 960px) {
+		padding-top: 60px;
+    padding-bottom: 60px;
 	}
 `;
 

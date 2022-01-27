@@ -30,7 +30,7 @@ export const InputWrap = styled.div`
 		border: 1px solid ${({ theme }) => theme.color.main.black};
 		background: ${({ theme }) => theme.color.body.secondary};
 
-		@media screen and (max-width: 960px) {
+		@media screen and (max-width: 1200px) {
 			max-width: 100%;
 		}
 	}
@@ -53,7 +53,7 @@ export const InputWrap = styled.div`
 		border: 1px solid ${({ theme }) => theme.color.main.black};
 		background: ${({ theme }) => theme.color.body.secondary};
 
-		@media screen and (max-width: 960px) {
+		@media screen and (max-width: 1200px) {
 			max-width: 100%;
 		}
 	}

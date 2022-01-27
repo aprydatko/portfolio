@@ -21,10 +21,8 @@ export const Container = styled.div`
 
 	@media only screen and (max-width: 960px) {
 		justify-content: flex-start;
-	}
-
-	@media only screen and (max-width: 960px) {
 		flex-direction: column;
+		margin-top: 0px;
 	}
 `;
 
@@ -32,6 +30,7 @@ export const Column = styled.div`
 	width: 225px;
 
 	@media only screen and (max-width: 960px) {
+		margin-top: 30px;
 		margin-right: 100px;
 	}
 
@@ -77,6 +76,10 @@ export const ExpertiseContainer = styled.div`
 
 	& h3 {
 		margin-bottom: 32px;
+	}
+
+	@media screen and (max-width: 650px) {
+		margin-top: 30px;
 	}
 `;
 

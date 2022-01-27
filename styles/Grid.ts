@@ -9,6 +9,10 @@ export const Grid = styled.div`
 	@media only screen and (max-width: 1200px) {
 		padding: 0 24px;
 	}
+
+	@media only screen and (max-width: 1024px) {
+		padding: 0 16px;
+	}
 `;
 
 export const GridContent = styled.div`
@@ -19,6 +23,6 @@ export const GridContent = styled.div`
 
 	@media only screen and (max-width: 1200px) {
 		max-width: 100%;
-		padding: 0 24px;
+		padding: 0 16px;
 	}
 `;

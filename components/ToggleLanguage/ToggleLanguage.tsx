@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import { motion, AnimatePresence } from "framer-motion/dist/framer-motion";
 import { useRouter, withRouter  } from 'next/router';
 import { Wrapper, Select, Item } from './ToggleLanguage.styles';
 
 export const ToggleLanguage = withRouter((): JSX.Element => {
+	const { lang } = useTranslation();
 	const router = useRouter();
 	const [open, setOpen] = useState(false);
 	const [language, setLanguage] = useState('');
@@ -16,14 +18,12 @@ export const ToggleLanguage = withRouter((): JSX.Element => {
 	};
 
 	useEffect(() => {
-		const pathname = window.location.pathname.split('/').find(t => t === 'en' || t === 'uk' || t === 'ru');
-		if (pathname && language !== pathname) {
-			setLanguage(pathname);
+		if (language !== lang) {
+			setLanguage(lang);
 		}
 	}, []);
 	
 	const handleClick = (lng: string): void => {
-		console.log('--- ---', lng);
 		const url = `/${lng}`;
 		setOpen(!open);
 		setLanguage(lng);
@@ -34,7 +34,7 @@ export const ToggleLanguage = withRouter((): JSX.Element => {
 			<Select>
 				<AnimatePresence>
 					{['uk', 'ru', 'en'].map((lng, index) => {
-						if (language === lng || open) {
+						if (lang === lng || open) {
 							return (
 								<Item 
 									key={lng} 

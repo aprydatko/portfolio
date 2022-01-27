@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import * as Scroll from 'react-scroll';
 
 import { AboutMeSection, GraphicContainer } from './AboutMe.styles';
 import { GridContent } from '../../../styles';
@@ -8,8 +8,9 @@ import { AboutMeBlock } from './AboutMeBlock/AboutMeBlock';
 import GraphicIcon from '../../../assets/graphic.svg';
 
 export const AboutMe = (): JSX.Element => {
+	let Element  = Scroll.Element;
 	return (
-		<Element name="about">
+		<Element name="about" className="about">
 			<AboutMeSection>
 				<GridContent>
 					<GraphicContainer>

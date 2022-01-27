@@ -17,6 +17,10 @@ export const SkillWrapper = styled.div`
 	@media only screen and (max-width: 960px) {
 		justify-content: flex-start;
 	}
+
+	@media only screen and (max-width: 650px) {
+		justify-content: space-between;
+	}
 `;
 
 export const SkillNameWrapper = styled.div`
@@ -30,6 +34,10 @@ export const SkillListWrapper = styled.div`
 
 	@media only screen and (max-width: 960px) {
 		margin-right: 16px;
+	}
+
+	@media only screen and (max-width: 650px) {
+		display: none;
 	}
 `;
 

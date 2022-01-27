@@ -19,6 +19,7 @@ export const FooterWrap = styled.footer`
 
 	& > ul {
 		align-items: center;
+		z-index: 0;
 		@media screen and (max-width: 960px) {
 			margin-bottom: 30px;
 		}
@@ -60,6 +61,10 @@ export const Info = styled.div`
 	color: ${({ theme }) => theme.color.main.black};
 	@media screen and (max-width: 960px) {
 		line-height: 2;
+	}
+
+	@media screen and (max-width: 650px) {
+		text-align: center;
 	}
 `;
 

@@ -26,6 +26,10 @@ export const Email = styled.a`
 		color: ${({ theme }) => theme.color.font.secondary};
 		transition: 225ms;
 	}
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
 `;
 
 export const HiddenMenu = styled.div`

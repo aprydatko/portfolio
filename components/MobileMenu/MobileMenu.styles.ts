@@ -23,6 +23,10 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
 	background: ${({ theme }) => theme.color.body.primary};
 	// z-index: 9999;
 
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+	}
+
 	&::after {
 		content: "";
 		position: absolute;
@@ -34,6 +38,10 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
 		z-index: -1;
 		transition: height 1s;
 		transition-delay: .3s;
+
+		@media screen and (max-width: 1024px) {
+			height: ${props => props.openMenu ? '95%' : '0'};
+		}
 	}
 	
 	&::before {
@@ -49,6 +57,13 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
 		background-position: 0% 100%;
 		transition: bottom 1.5s;
 		transition-delay: .3s;
+
+		@media screen and (max-width: 1024px) {
+			// display: none;
+			bottom: ${props => props.openMenu ? '0' : '-320px'};
+			right: 0;
+			opacity: .3;
+		}
 	}
 `;
 
@@ -56,6 +71,14 @@ export const HiddenMenu = styled.div`
 	position: relative;
 	top: 0;
 	left: 126px;
+
+	@media screen and (max-width: 1024px) {
+		position: static;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 `;
 
 export const ItemWrap = styled(motion.li)`
@@ -66,9 +89,16 @@ export const ItemWrap = styled(motion.li)`
 		text-decoration: none;
 		color: ${({ theme }) => theme.color.font.primary};
 		transition: 225ms;
+		cursor: pointer;
+
 		&:hover {
 			color: ${({ theme }) => theme.color.font.secondary};
 			transition: 225ms;
+		}
+
+		@media screen and (max-width: 1024px) {
+			font-size: 42px;
+			line-height: 2;
 		}
 	}
 `;
@@ -80,6 +110,10 @@ export const WrapperMenu = styled.div`
 	width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+
+	@media screen and (max-width: 1024px) {
+		padding: 0;
+	}
 
 	& ul {
 		position: absolute;
@@ -104,6 +138,10 @@ export const WrapperMenu = styled.div`
 			& .github {
 				position: static;
 			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			display: none;
 		}
 	}
 `;

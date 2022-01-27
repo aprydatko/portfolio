@@ -25,10 +25,12 @@ export const List = styled.ul`
 
 	@media only screen and (max-width: 960px) {
 		position: relative;
+		margin-top: 16px;
 		margin-right: 0px;
 		margin-left: 170px;
 		marign-bottom: 0;
 		padding-top: 25px;
+		padding-bottom: 25px;
 		padding-left: 40px;
 		display: flex;
 
@@ -44,7 +46,11 @@ export const List = styled.ul`
 	}
 
 	@media only screen and (max-width: 650px) {
-		margin-left: 0px;
+		margin-left: 35px;
+	}
+
+	@media only screen and (max-width: 480px) {
+		flex-direction: column;
 	}
 `;
 
@@ -64,4 +70,8 @@ export const Text = styled.div`
 	font-size: ${({ theme }) => theme.fontSize[1]};
 	line-height: 1.3;
 	font-weight: ${({ theme }) => theme.fontWeight.bold};
+
+	@media only screen and (max-width: 480px) {
+		font-size: ${({ theme }) => theme.fontSize[0]};
+	}
 `;

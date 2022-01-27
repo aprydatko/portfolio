@@ -30,11 +30,11 @@ export const Wrapper = styled.li<WrapperProps>`
 
 	& svg {
 		width: 19px;
-		fill: ${({ theme, themeName, openMenu }) => themeName !== 'dark' ? theme.color.main.black : theme.color.main.violet};
+		fill: ${({ theme, themeName, openMenu }) => themeName !== 'dark' ? theme.color.main.black : theme.color.main.orange};
 	}
 
 	& .linkendin {
-		// fill: ${({ theme }) => theme.color.main.black};
+		// fill: ${({ theme, themeName }) => themeName !== 'dark' ? theme.color.main.black : theme.color.main.blue};
 	}
 
 	& .gmail {

@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Scroll from 'react-scroll';
 import Link from "next/link";
 import useTranslation from 'next-translate/useTranslation';
 import { MenuItemProps, MobileMenuProps } from './MobileMenu.props';
@@ -21,6 +22,20 @@ const menuAnimate = {
 
 const MenuItem = ({ id, hash, url, openMenu, toggleMenu }: MenuItemProps): JSX.Element => {
 	const { t } = useTranslation();
+	
+	const scrollToSection = (element: string) => {
+		const scroller  = Scroll.scroller;
+
+		scroller.scrollTo(element, {
+			duration: 1500,
+			delay: 100,
+			smooth: true,
+			offset: element === 'contact' ? -100 : 100,
+		});
+
+		if (toggleMenu) toggleMenu();
+	}
+
 	return (
 		<ItemWrap 
 			key={id}
@@ -29,22 +44,15 @@ const MenuItem = ({ id, hash, url, openMenu, toggleMenu }: MenuItemProps): JSX.E
 			animate={openMenu ? 'visible' : 'hidden'}
 			custom={id}
 		>
-			<Link
-				href={{
-				pathname: url ? "/" + t(`common:menu.${id}.url`) : '/',
-				hash: hash ? hash : null
-				}}
-			>
-				<a onClick={toggleMenu}>
-					{t(`common:menu.${id}.name`)}
-				</a>
-			</Link>
+			<a onClick={() => scrollToSection(t(`common:menu.${id}.hash`))}>
+				{t(`common:menu.${id}.name`)}
+			</a>
 		</ItemWrap>
 	);
 };
 
 export const MobileMenu = ({ openMenu, toggleMenu, ...props }: MobileMenuProps): JSX.Element => {
-	const { t } = useTranslation();
+	// const { t } = useTranslation();
 	const { menu } = common;
 	return (
 		<Wrapper 

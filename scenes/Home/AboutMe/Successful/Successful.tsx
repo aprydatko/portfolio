@@ -24,7 +24,7 @@ export const Successful = (): JSX.Element => {
 				</Item>
 				<Item>
 					<Cup />
-					<Count>1</Count>
+					<Count>-</Count>
 					<Text>{t('home:about.awwardsWon')}</Text>
 				</Item>
 			</List>

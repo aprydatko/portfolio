@@ -8,6 +8,7 @@ export const WelcomeInfo = styled(motion.div)`
   padding-left: 24px;
 
   max-width: 300px;
+  width: 100%;
   height: 230px;
 
   box-sizing: border-box;
@@ -22,6 +23,10 @@ export const WelcomeInfo = styled(motion.div)`
     right: 150px;
     transition: 2s;
     transition-delay: .5s;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   & .quick-information {
@@ -59,14 +64,22 @@ export const WelcomeInfo = styled(motion.div)`
   }
 
   @media only screen and (max-width: 1200px) {
-    top: 0px;
+    top: 16px;
+    right: -170px;
     max-width: 400px;
     height: auto;
-    margin-left: 170px;
   }
 
   @media only screen and (max-width: 650px) {
+    max-width: 260px;
+    height: auto;
     margin-left: 0px;
+    padding: 0 16px;
+    right: -35px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
   }
 
   @media only screen and (min-width: 1200px) {
@@ -77,8 +90,7 @@ export const WelcomeInfo = styled(motion.div)`
 `;
 
 export const WelcomeDescription = styled.div`
-  padding-top: 34px;
-  padding-bottom: 16px;
+  padding: 34px 16px 16px 0px;
 
   font-size: ${({ theme }) => theme.fontSize[1]};
   font-family: ${({ theme }) => theme.fontFamily.primary};
@@ -87,4 +99,9 @@ export const WelcomeDescription = styled.div`
   line-height: ${({ theme }) => theme.lineHeight.heading};
 
   color: ${({ theme }) => theme.color.font.primary};
+  box-sizing: border-box;
+
+   @media only screen and (max-width: 650px) {
+    font-size: 16px;
+  }
 `;

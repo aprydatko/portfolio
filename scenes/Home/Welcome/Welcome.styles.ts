@@ -6,7 +6,7 @@ export const Header = styled.div`
 
   @media only screen and (max-width: 1200px) {
     padding-top: 70px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
     background: ${({ theme }) => theme.color.body.secondary};
   }
 `;

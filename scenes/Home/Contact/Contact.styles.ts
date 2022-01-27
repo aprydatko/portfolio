@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	margin-top: 100px;
+	margin-top: 50px;
 	padding-bottom: 115px;
 	position: relative;
 	background-color: ${({ theme }) => theme.color.body.secondary};
@@ -17,11 +17,21 @@ export const Container = styled.div`
 	& h2 {
 		position: absolute;
     	top: -55px;
+
+		@media screen and (max-width: 650px) {
+			position: static;
+		}
 	}
 
 	& .button-load {
 		display: block;
 		margin: 0 auto;
+	}
+
+	@media screen and (max-width: 650px) {
+		margin-top: 0;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 `;
 

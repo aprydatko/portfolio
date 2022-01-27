@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Scroll from 'react-scroll';
 import useTranslation from 'next-translate/useTranslation';
 import { Htag } from '../../../components';
 import { ContactBlock } from './ContactBlock/ContactBlock';
@@ -7,12 +8,15 @@ import { Container } from './Contact.styles';
 
 export const Contact = (): JSX.Element => {
 	const { t, lang } = useTranslation();
+	let Element = Scroll.Element;
 	return (
-		<Container id="contact">
-			<GridContent>
-				<Htag tag="h2">{t('home:contact.title')}</Htag>
-				<ContactBlock />
-			</GridContent>
-		</Container>
+		<Element name="contact" className="contact">
+			<Container>
+				<GridContent>
+					<Htag tag="h2">{t('home:contact.title')}</Htag>
+					<ContactBlock />
+				</GridContent>
+			</Container>
+		</Element>
 	);
 };

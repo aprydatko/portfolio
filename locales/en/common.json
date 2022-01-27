@@ -16,11 +16,6 @@
 			"hash": "resume"
 		},
 		{
-			"id": 2,
-			"name": "Projects",
-			"hash": "projects"
-		},
-		{
 			"id": 3,
 			"name": "Contact",
 			"hash": "contact"

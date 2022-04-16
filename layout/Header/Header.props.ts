@@ -1,8 +1,9 @@
-import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
 
-export interface HeaderProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> { 
-	theme?: String;
-	toggleTheme?: () => any;
-	openMenu?: Boolean;
-	toggleMenu?: () => any;
+export interface HeaderProps
+    extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+    theme: "light" | "dark";
+    openMenu: boolean;
+    toggleTheme: (theme: string) => void;
+    toggleMenu: () => void;
 }

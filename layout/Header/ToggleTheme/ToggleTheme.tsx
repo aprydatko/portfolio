@@ -1,25 +1,30 @@
-import React from 'react';
-import { ToggleThemeProps } from './ToggleTheme.props';
-import { Button } from './ToggleTheme.styles';
+import React from "react";
+import { BsFillMoonFill, BsBrightnessHighFill } from "react-icons/bs";
+import { ToggleThemeProps } from "./ToggleTheme.props";
+import { Button } from "./ToggleTheme.styles";
 
-import ThemeLight from '../../../assets/icons/theme-mode-light.svg';
-import ThemeDark from '../../../assets/icons/theme-mode-dark.svg';
-
-const ToggleTheme = ({ state, toggleTheme }: ToggleThemeProps): JSX.Element => {
-	const handleClick = () => {
-		toggleTheme && toggleTheme(state === 'light' ? 'dark' : 'light');
-	};
-	return (
-		<Button
-			state={state}
-			onClick={() => handleClick()}
-			title={state !== 'light' ? 'Изменить на тёмную тему' : 'Изменить на светлую тему'}
-		>
-			{state === 'light' && <ThemeLight className="dark-icon" />}
-			{state === 'dark' && <ThemeDark className="light-icon" />}
-		</Button>
-	);
+const ToggleTheme = (props: ToggleThemeProps): JSX.Element => {
+    return (
+        <Button
+            onClick={() =>
+                props.theme === "dark"
+                    ? props.toggleTheme("dark")
+                    : props.toggleTheme("light")
+            }
+            title={
+                props.theme !== "dark"
+                    ? "Изменить на тёмную тему"
+                    : "Изменить на светлую тему"
+            }
+        >
+            {props.theme === "dark" && (
+                <BsBrightnessHighFill className="dark-icon" />
+            )}
+            {props.theme === "light" && (
+                <BsFillMoonFill className="light-icon" />
+            )}
+        </Button>
+    );
 };
 
 export default ToggleTheme;
-

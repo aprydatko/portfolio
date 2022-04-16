@@ -1,12 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 interface ContainerProps {
-	openMenu: boolean | undefined;
+    openMenu: boolean | undefined;
 }
 
 export const Container = styled.div<ContainerProps>`
-	margin: 0 auto;
-	box-sizing: border-box;
-	height: ${props => props.openMenu ? '100vh' : '100%'};
-	overflow: ${props => props.openMenu ? 'hidden' : 'auto'};
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100vh;
+
+    margin: 0 auto;
+    box-sizing: border-box;
 `;

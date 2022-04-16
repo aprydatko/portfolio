@@ -9,7 +9,7 @@ import {
    FieldProps,
  } from 'formik';
 import useTranslation from 'next-translate/useTranslation';
-import { Button, Htag } from '../../../../components';
+import { Alert, Button, Htag } from '../../../../components';
 import { FormWrap, Input, Label, InputWrap, Textarea } from './Form.styles';
 
 interface Values {
@@ -19,7 +19,7 @@ interface Values {
 }
 
 export const FormBlock = (): JSX.Element => {
-	const { t, lang } = useTranslation();
+	const { t } = useTranslation();
 	return (
 		<FormWrap>
 			<Formik
@@ -32,14 +32,14 @@ export const FormBlock = (): JSX.Element => {
 					values: Values,
 					{ setSubmitting }: FormikHelpers<Values>
 				) => {
-					axios.post('http://others.artyrpridatko.5k5.ru/api/mail.php', values)
+					axios.post('/api/mail.php', values)
 					.then(function (response) {
 						console.log(response);
-						alert('Сообщение отправлено успешно!');
+						<Alert message='Сообщение успешно отправлено!' />
 					})
 					.catch(function (error) {
 						console.log(error);
-						alert('Сообщение не удалось отправить!');
+						<Alert message='Сообщение не удалось отправить!' />
 					});
 					
 					setSubmitting(false);

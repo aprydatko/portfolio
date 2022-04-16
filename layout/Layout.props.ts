@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 export interface LayoutProps {
-	children: ReactNode;
-	theme?: String;
-	toggleTheme?: () => any;
-	openMenu?: boolean;
-	toggleMenu?: () => any;
+    children: ReactNode;
+    theme: "light" | "dark";
+    openMenu: boolean;
+    toggleTheme: (theme: string) => void;
+    toggleMenu: () => void;
 }

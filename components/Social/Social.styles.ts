@@ -1,56 +1,41 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion/dist/framer-motion';
+import styled from "styled-components";
 
-interface WrapperProps {
-	openMenu?: boolean;
-	themeName?: string;
-}
+export const Container = styled.ul`
+    margin: 0;
+    padding: 0;
 
-export const Container = styled(motion.ul)`
-	margin: 0;
-	padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	list-style-type: none;
-	z-index: 9999;
-	opacity: ${props => !props.trigger ? '1' : props.openMenu && 'mobileMenu' ? '1' : '0'};
-	transition: ${props => props.openMenu ? '1s' : '0s'};
-	transition-delay: ${props => props.openMenu ? '1.3s' : '0s'};
+    list-style-type: none;
+    z-index: 9999;
 `;
 
-export const Link = styled.a`
-	
-`;
+export const Link = styled.a``;
 
-export const Wrapper = styled.li<WrapperProps>`
-	margin-right: 24px;
+export const Wrapper = styled.li`
 	line-height: 1;
 
-	& svg {
-		width: 19px;
-		fill: ${({ theme, themeName, openMenu }) => themeName !== 'dark' ? theme.color.main.black : theme.color.main.orange};
+	&:nth-child(1) {
+		padding-left: 0px;
 	}
 
-	& .linkendin {
-		// fill: ${({ theme, themeName }) => themeName !== 'dark' ? theme.color.main.black : theme.color.main.blue};
+	&:last-child {
+		padding-right: 0px;
 	}
 
-	& .gmail {
-		position: relative;
-		top: -1px;
-		// fill: ${({ theme }) => theme.color.main.black};
-	}
-
-	& .github {
-		position: relative;
-		top: 1px;
-		// fill: ${({ theme }) => theme.color.main.black};
+	 & svg {
+		fill: ${({ theme }) => theme.color.icon.primary};
+		& > path {
+			fill: ${({ theme }) => theme.color.icon.primary};
+		}
 	}
 
 	& .linkendin:hover {
-		fill: #0077b5;
+		& > path {
+			fill: #0e76a8;
+		}
 		transition 225ms;
 	}
 
@@ -61,6 +46,9 @@ export const Wrapper = styled.li<WrapperProps>`
 
 	& .github:hover {
 		fill: #5C6BC0;
+		& > path {
+			fill: #5C6BC0;
+		}
 		transition 225ms;
 	}
 `;

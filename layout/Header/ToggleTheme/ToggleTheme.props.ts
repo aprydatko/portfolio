@@ -1,5 +1,4 @@
-
 export interface ToggleThemeProps {
-	state: 'light' | 'dark';
-	toggleTheme?: (theme: string) => void;
+    theme: "light" | "dark";
+    toggleTheme: (theme: string) => void;
 }

@@ -26,3 +26,4 @@ export * from './Blog/Reviews/Reviews';
 export * from './Blog/PresentationBlock/PresentationBlock';
 export * from './Blog/Slider/Slider';
 export * from './Blog/Tags/Tags';
+export * from './Alert/Alert';

@@ -1,50 +1,51 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MenuBlock = styled.div`
-	// position: relative;
-	display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const ThemeBlock = styled.div`
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 `;
 
 export const Email = styled.a`
-	margin-left: 106px;
+    margin-left: 106px;
 
-	font-size: ${({ theme }) => theme.fontSize[0]};
-	font-weight: 700;
-	line-height: 30px;
+    font-size: ${({ theme }) => theme.fontSize["xs"]};
+    font-weight: ${({ theme }) => theme.fontWeight.subHeading};
+    line-height: ${({ theme }) => theme.lineHeight.subHeading};
 
-	color: ${({ theme }) => theme.color.font.primary};
-	text-decoration: none;
-	transition: 225ms;
+    color: ${({ theme }) => theme.color.link.primary};
+    text-decoration: none;
+    transition: 225ms;
 
-	&:hover {
-		color: ${({ theme }) => theme.color.font.secondary};
-		transition: 225ms;
-	}
+    &:hover {
+        color: ${({ theme }) => theme.color.link.secondary};
+        transition: 225ms;
+    }
 
-	@media screen and (max-width: 1024px) {
-		display: none;
-	}
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 `;
 
 export const HiddenMenu = styled.div`
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 `;
 
 export const Line = styled.div`
-	margin: 0 14px;
-	width: 1px;
-	height: 25px;
-	background: ${({ theme }) => theme.color.body.secondary};
+    margin: 0 16px;
+    width: 1px;
+    height: 25px;
+    background: ${({ theme }) => theme.color.body.secondary};
 
-	&.dark-line {
-		background: ${({ theme }) => theme.color.font.tertiary};
-	}
+    &.dark-line {
+        background: ${({ theme }) => theme.color.font.tertiary};
+    }
 `;

@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 export interface ButtonProps {
-	children: ReactNode;
-	appearance: 'primary' | 'ghost' | 'nostroke';
-	size?: 'large' | 'middle' | 'small';
-	className?: string;
+    children: ReactNode;
+    appearance: "primary" | "ghost" | "nostroke";
+    size?: "large" | "middle" | "small";
+    className?: string;
 }

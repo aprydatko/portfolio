@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
     padding: 100px 0;
@@ -23,13 +23,13 @@ export const Content = styled.div`
 
 export const Name = styled.div`
     font-family: ${({ theme }) => theme.fontFamily.primary};
-    font-size: ${({ theme }) => theme.fontSize[2]};
+    font-size: ${({ theme }) => theme.fontSize["md"]};
     font-weight: 300;
 `;
 
 export const Position = styled.div`
     font-family: ${({ theme }) => theme.fontFamily.primary};
-    font-size: ${({ theme }) => theme.fontSize[1]};
+    font-size: ${({ theme }) => theme.fontSize["md"]};
     font-weight: 300;
 `;
 

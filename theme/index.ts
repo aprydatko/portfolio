@@ -1,7 +1,7 @@
 import {
     Colors,
     FontFamily,
-    FontWeights,
+    FontWeight,
     LineHeights,
     FontSize,
 } from "./interfaces";
@@ -19,7 +19,7 @@ declare module "styled-components" {
     export interface DefaultTheme {
         fontFamily: FontFamily;
         fontSize: FontSize;
-        fontWeight: FontWeights;
+        fontWeight: FontWeight;
         lineHeight: LineHeights;
         color: Colors;
     }

@@ -1,4 +1,5 @@
 import React from "react";
+import * as Scroll from "react-scroll";
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import { Htag } from "../../../../components";
@@ -14,10 +15,13 @@ import { Button } from "../../../../components";
 // import Signature from '../../../../assets/icons/signature.svg';
 
 export const AboutMeBlock = (): JSX.Element => {
+    const Element = Scroll.Element;
     const { t } = useTranslation();
     return (
         <AboutMeBlockSection id="about">
-            <Htag tag="h2">{t("home:about.title")}</Htag>
+            <Element name="about" className="about">
+                <Htag tag="h2">{t("home:about.title")}</Htag>
+            </Element>
             <Container>
                 <Successful />
                 <Wrapper>
@@ -27,13 +31,13 @@ export const AboutMeBlock = (): JSX.Element => {
                             components={[<p></p>]}
                         />
                     </MessageBlock>
-                    <Button
+                    {/* <Button
                         className="button-resume"
                         appearance="ghost"
                         size="middle"
                     >
                         {t("home:about.button")}
-                    </Button>
+                    </Button> */}
                     {/* <Signature className="signature-icon" /> */}
                 </Wrapper>
             </Container>

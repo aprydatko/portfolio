@@ -48,8 +48,8 @@
 		},
 		"expertise": {
 			"title": "expertise",
-			"0": "App Development",
-			"1": "Website Development",
+			"0": "Website Development",
+			"1": "App Development",
 			"2": "CRM/ADMIN pannels",
 			"3": "SEO"
 		},
@@ -59,7 +59,7 @@
 				"date": "2020 - new",
 				"company": "Ithinkers",
 				"position": "Front/Web Developer",
-				"description": "I am developing e-commerce stores, making food delivery applications, developing a CRM website for product management."
+				"description": "I develop commercial web programs for food sales and delivery, CRM panels, I set up SEO."
 			},
 			"1": {
 				"date": "2019 - 2020",
@@ -194,7 +194,7 @@
 		"message": {
 			"icon": "city of Sumy, Prokofiev street",
 			"label": "Message",
-			"placeholder": "Enter your email address"
+			"placeholder": "Enter text message"
 		}
 	},
 	"footer": {

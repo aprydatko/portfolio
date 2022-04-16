@@ -1,6 +1,5 @@
 import React from "react";
 import * as Scroll from "react-scroll";
-import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import { MenuItemProps, MobileMenuProps } from "./MobileMenu.props";
 import {
@@ -34,14 +33,25 @@ const MenuItem = ({
 }: MenuItemProps): JSX.Element => {
     const { t } = useTranslation();
 
+    const getDifference = (elementName: string): number => {
+        switch (elementName) {
+            case "about":
+                return 220;
+            default:
+                return 0;
+        }
+    };
+
     const scrollToSection = (element: string) => {
         const scroller = Scroll.scroller;
+
+        console.log("element", element);
 
         scroller.scrollTo(element, {
             duration: 1500,
             delay: 100,
             smooth: true,
-            offset: element === "contact" ? -100 : 100,
+            offset: 0,
         });
 
         if (toggleMenu) toggleMenu();
@@ -84,10 +94,9 @@ export const MobileMenu = ({
                     {menu.map((item, index) => (
                         <div key={index}>
                             <MenuItem
+                                id={index}
                                 openMenu={openMenu}
                                 toggleMenu={toggleMenu}
-                                {...item}
-                                id={index}
                             />
                         </div>
                     ))}

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
+    "@sendgrid/mail": "^7.6.2",
     "@types/react-motion": "0.0.32",
     "@types/styled-components": "^5.1.10",
     "axios": "^0.24.0",

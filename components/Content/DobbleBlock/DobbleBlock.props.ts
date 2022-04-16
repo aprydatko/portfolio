@@ -1,3 +1,3 @@
 export interface DobbleBlockProps {
-	page: string;
+    page: string;
 }

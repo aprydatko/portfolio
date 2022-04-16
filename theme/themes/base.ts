@@ -9,9 +9,6 @@ export const base = {
         md: "26px",
         lg: "120px",
         xl: "90px",
-        "2xs": "32px",
-        "2sm": "40px",
-        "2md": "54px",
     },
     fontWeight: {
         text: 300,

@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
                 ></link>
             </Head>
             {activeTheme && (
-                <ThemeProvider theme={activeTheme}>
+                <ThemeProvider theme={lightTheme}>
                     <GlobalStyles />
                     <Component
                         toggleMenu={toggleMenu}

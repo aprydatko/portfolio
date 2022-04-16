@@ -1,14 +1,4 @@
-import styled from 'styled-components';
-
-export const Background = styled.div`
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: black;
-`;
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
     position: fixed;
@@ -20,13 +10,13 @@ export const Wrapper = styled.div`
 
     background: #f7f5f2;
     border-radius: 16px;
-   	box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
     z-index: 9999;
 `;
 
 export const Position = styled.div`
     font-family: ${({ theme }) => theme.fontFamily.primary};
-    font-size: ${({ theme }) => theme.fontSize[1]};
+    font-size: ${({ theme }) => theme.fontSize["sm"]};
     font-weight: 300;
 `;
 
@@ -47,9 +37,9 @@ export const IconWrap = styled.div`
         margin-top: 50px;
         margin-bottom: 40px;
         transform: scale(2.5);
-        
+
         & > path {
-            fill: ${props => props.theme.color.main.orange};
+            fill: ${(props) => props.theme.color.main.orange};
         }
     }
 `;

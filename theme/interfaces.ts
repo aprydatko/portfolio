@@ -9,13 +9,15 @@ export interface FontSize {
     lg: string;
     xl: string;
 }
-export interface FontWeights {
-    body: number;
-    subHeading: number;
+
+export interface FontWeight {
+    text: number;
     link: number;
+    subHeading: number;
     bold: number;
     heading: number;
 }
+
 export interface LineHeights {
     body: number;
     heading: number;
@@ -58,8 +60,8 @@ export interface ColorLink {
 }
 
 export interface Colors {
-    footer: ColorFooter;
     body: ColorBody;
+    footer: ColorFooter;
     main: ColorMain;
     font: ColorFont;
     icon: ColorIcon;

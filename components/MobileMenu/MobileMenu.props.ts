@@ -1,9 +1,9 @@
 export interface MenuItemProps {
     id: number;
     openMenu: boolean;
-    hash: string | null;
-    url: string;
-    toggleMenu: () => boolean;
+    hash?: string | null;
+    url?: string;
+    toggleMenu: () => void;
 }
 
 export interface MobileMenuProps {

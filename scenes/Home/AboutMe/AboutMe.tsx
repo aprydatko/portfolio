@@ -10,21 +10,19 @@ import GraphicIcon from "../../../assets/graphic.svg";
 export const AboutMe = (): JSX.Element => {
     const Element = Scroll.Element;
     return (
-        <Element name="about" className="about">
-            <AboutMeSection>
-                <GridContent>
-                    <GraphicContainer>
-                        <GraphicIcon className="graphic-icon" />
-                    </GraphicContainer>
-                    <QuickInformation
-                        className="quick-information"
-                        section="welcome"
-                        subsection="quickInformation"
-                        count={3}
-                    />
-                    <AboutMeBlock />
-                </GridContent>
-            </AboutMeSection>
-        </Element>
+        <AboutMeSection>
+            <GridContent>
+                <GraphicContainer>
+                    <GraphicIcon className="graphic-icon" />
+                </GraphicContainer>
+                <QuickInformation
+                    className="quick-information"
+                    section="welcome"
+                    subsection="quickInformation"
+                    count={3}
+                />
+                <AboutMeBlock />
+            </GridContent>
+        </AboutMeSection>
     );
 };

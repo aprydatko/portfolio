@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import { withLayout } from "../layout/Layout";
@@ -21,9 +20,6 @@ const Wrapper = styled.div``;
 
 function Home(props: any): JSX.Element {
     const { t } = useTranslation();
-    // const store = useSelector((store) => store);
-    // console.log("store ->>>", store);
-
     return (
         <div>
             <Head>
@@ -34,13 +30,13 @@ function Home(props: any): JSX.Element {
             <Wrapper id="main">
                 <Welcome openMenu={props.openMenu} />
                 <AboutMe />
-                {/* <MyResume /> */}
+                <MyResume />
                 {/* <MyProjects /> */}
                 {/* <Pricing /> */}
                 {/* <MyBlog /> */}
                 {/* <MyClients /> */}
-                {/* <Contact /> */}
-                {/* <Map /> */}
+                <Contact />
+                <Map />
             </Wrapper>
         </div>
     );

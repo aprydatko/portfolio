@@ -6,7 +6,7 @@ import { Wrapper } from "./Map.styles";
 import Marker from "./Marker/Marker";
 
 export const Map = (): JSX.Element => {
-    let Element = Scroll.Element;
+    const Element = Scroll.Element;
     const config = {
         center: {
             lat: 50.895341158562395,

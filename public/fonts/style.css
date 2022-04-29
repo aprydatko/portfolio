@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Sorts Mill Goudy';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url(./SortsMillGoudy/SortsMillGoudy-Regular.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Rubik/Rubik-Light.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Rubik/Rubik-Regular.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Rubik/Rubik-Medium.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Rubik/Rubik-Bold.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Source/SourceSerifPro-Light.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Source/SourceSerifPro-Regular.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Source/SourceSerifPro-SemiBold.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url(./Source/SourceSerifPro-Bold.ttf) format('ttf');
+}

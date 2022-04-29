@@ -7,9 +7,11 @@ export const Button = ({
     children,
     type,
     className,
+    onClick,
 }: ButtonProps): JSX.Element => {
     return (
         <ButtonWrap
+            onClick={onClick}
             type={type === "submit" ? "submit" : "button"}
             className={`
 				${

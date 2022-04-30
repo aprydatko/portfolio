@@ -14,7 +14,7 @@
     "@reduxjs/toolkit": "^1.8.1",
     "@sendgrid/mail": "^7.6.2",
     "@types/react-motion": "0.0.32",
-    "@types/styled-components": "^5.1.10",
+    "@types/styled-components": "^5.1.25",
     "axios": "^0.24.0",
     "file-loader": "^6.2.0",
     "formik": "^2.2.9",

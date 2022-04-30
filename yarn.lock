@@ -1615,6 +1615,11 @@
   "resolved" "https://registry.npmjs.org/@types/q/-/q-1.5.5.tgz"
   "version" "1.5.5"
 
+"@types/react-gtm-module@^2.0.1":
+  "integrity" "sha512-T/DN9gAbCYk5wJ1nxf4pSwmXz4d1iVjM++OoG+mwMfz9STMAotGjSb65gJHOS5bPvl6vLSsJnuC+y/43OQrltg=="
+  "resolved" "https://registry.npmjs.org/@types/react-gtm-module/-/react-gtm-module-2.0.1.tgz"
+  "version" "2.0.1"
+
 "@types/react-motion@0.0.32":
   "integrity" "sha512-xePjDdhy6/6AX3CUQCeQ2GSF0RwF+lXSpUSrm8tmdUXRf5Ps/dULwouTJ8YHhDvX7WlwYRKZjHXatadz/x3HXA=="
   "resolved" "https://registry.npmjs.org/@types/react-motion/-/react-motion-0.0.32.tgz"

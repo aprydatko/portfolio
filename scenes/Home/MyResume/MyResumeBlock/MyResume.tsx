@@ -66,13 +66,18 @@ export const MyResumeBlock = (): JSX.Element => {
                     </MessageBlock>
                     <Skills data={skills} />
                     <WorkHistory />
-                    {/* <Button
-                        className="button-resume"
-                        appearance="primary"
-                        size="middle"
+                    <a
+                        href="/files/prydatko_artur.pdf"
+                        download="/files/prydatko_artur.pdf"
                     >
-                        {t("home:resume.button")}
-                    </Button> */}
+                        <Button
+                            className="button-resume"
+                            appearance="primary"
+                            size="middle"
+                        >
+                            {t("home:resume.button")}
+                        </Button>
+                    </a>
                 </Wrapper>
             </Container>
         </AboutMeBlockSection>

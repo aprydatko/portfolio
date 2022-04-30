@@ -30,6 +30,16 @@ module.exports = nextTranslate({
 			use: ['@svgr/webpack'],
 		});
 
+		config.module.rules.push({
+			test: /\.pdf$/,
+			use: {
+				loader: 'file-loader',
+				options: {
+				name: '[path][name].[ext]',
+				},
+			},
+		});
+
 		return config;
 	},
 	webpack5: false,

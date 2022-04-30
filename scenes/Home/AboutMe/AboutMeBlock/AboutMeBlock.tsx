@@ -37,14 +37,16 @@ export const AboutMeBlock = (): JSX.Element => {
                             components={[<p></p>]}
                         />
                     </MessageBlock>
-                    <Button
-                        className="button-resume"
-                        appearance="ghost"
-                        size="middle"
-                        onClick={handleClick}
-                    >
-                        {t("home:about.button")}
-                    </Button>
+                    <a href="/files/prydatko_artur.pdf">
+                        <Button
+                            className="button-resume"
+                            appearance="ghost"
+                            size="middle"
+                            onClick={handleClick}
+                        >
+                            {t("home:about.button")}
+                        </Button>
+                    </a>
                     <Signature className="signature-icon" />
                 </Wrapper>
             </Container>
